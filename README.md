@@ -2,7 +2,7 @@
 
 This repository contains code for building a pipeline using Apache Airflow. The pipeline extracts data from vnstock (stock API of TCBS and SSI), transform it, and loads it into a datawarehouse and datamart for business analytic.
 
-![Alt text](DEC-final_project.drawio.png)
+![Alt text](image/DEC-final_project.drawio.png)
 
 ## Getting Started
 
@@ -47,7 +47,7 @@ Main DAGs:
 
 [Main.py](./src/dags/main.py)
 
-![Alt text](image.png)
+![Main_dag](image/main_dag.png)
 
 #### Configuration
 
@@ -61,7 +61,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 1. **DAG vnstock-pipeline-1D:** [collect_gcs.py](./src/pluggin/collect_gcs.py)
 
-![Alt text](image-2.png)
+![vnstock-pipeline-1D](image/vnstock-pipeline-1D.png)
 
 - **Scheduler:** Daily at 4PM
 - **Tasks:** Daily stock data is collected from `vnstock` and processed at hourly intervals, after which the processed data is sent to Google Cloud Storage. Furthermore, email alerts are triggered to notify successful execution of these tasks.
@@ -70,9 +70,9 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
     
 2. **Stock_pipeline-3M-1Y:** [collect_gcs.py](./src/pluggin/collect_gcs.py)
 
-![Alt text](image-3.png)
+![Alt text](image/Stock_pipeline-3M-1Y.png)
 
-- **Scheduler:** Daily at 20PM
+- **Scheduler:** Daily at 8PM
 
 - **Task:** The system gathers a year's worth of data and stores in Google Cloud Storage. Use Spark to process data from Google Cloud Storage, then compute the most consistency growing stock codes over three-month period, where stability is defined by an average index increase within a 10% amplitude range. The results are then sent to Bigquery for advanced analysis.
 
@@ -81,39 +81,39 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 3. **vnstock-pipeline-1H:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
 
-![Alt text](image-4.png)
+![Alt text](image/vnstock-pipeline-1H.png)
 
 - **Scheduler:** Between 8AM - 4PM
 
 - **Task:** Users is possible to select their preferred stock codes for monitoring. This module continually updates the stock indices every hour during trading hours and publishes them to Cloud Pub/Sub. Upon new data being published on Cloud Pub/Sub, it triggers the system to read and incorporate the fresh information into Bigquery for seamless integration of real-time data updates.
 
-Cloud function trigger sucessfully
+Cloud function log: trigger from pubsub sucessfully
 
-![Alt text](image-5.png)
+![Alt text](image/Cloud-function-log.png)
 
 Bigquery receive and present data
 
-![Alt text](image-6.png)
+![Alt text](image/Bigquery_result_1H.png)
 
 - **Data Format:** ['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']
 **This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
 
 4. **vnstock-pipeline-1M:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
 
-![Alt text](image-7.png)
+![Alt text](image/vnstock-pipeline-1M.png)
 
 - **Scheduler:** Between 8AM - 4PM with every 5 minutes
 
 - **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
 
-![Alt text](image-9.png)
+![Alt text](image/telegram.png)
 
 - **Data Format:** ['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']
 **This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
 
 5. **Visualization:**
 
-![Alt text](image-8.png)
+![Alt text](image/visualize.png)
 
 
 
