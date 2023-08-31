@@ -57,11 +57,13 @@ def vm_pub_pubsub_1M():
         matched_value = sum_stocks_df.iloc[i]['Matched']
         matched_name = sum_stocks_df.iloc[i]['Ticker']
         Reference_price = sum_stocks_df.iloc[i]['Reference']
-        Limit=Reference_price
+        Limit=(matched_value*0.1) + matched_value
 
         if matched_value < Limit and matched_name in Selected_stock:
             count+=1
             selected_stock = sum_stocks_df.iloc[i][['Ticker','Matched']].to_string()
-            url = f"https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={count}/{len(sum_stocks_df)}. Selected_stock < ({Limit}) (Reference_price)  at {current_time.strftime('%Y-%m-%d %H:%M:%S')}: \n{selected_stock}"
+            url = f"https://api.telegram.org/bot{bot_token}/sendMessage?chat_id={chat_id}&text={count}/{len(sum_stocks_df)}. Selected_stock < 10% expectation_price({Limit})  at {current_time.strftime('%Y-%m-%d %H:%M:%S')}: \n{selected_stock}"
             response = requests.get(url)
             print(selected_stock)
+
+vm_pub_pubsub_1M()

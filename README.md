@@ -61,53 +61,59 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 1. **DAG vnstock-pipeline-1D:** [collect_gcs.py](./src/pluggin/collect_gcs.py)
 
-- Scheduler: Daily at 4 PM
+![Alt text](image-2.png)
 
-- Tasks:
-
-    1.1. __Stock_collection_1D:__ 
-    Collect and process stock data for current day hourly with form:
-
-    `['time', 'open', 'high','low', 'close','volume','ticker','type']`
-
-    ![Alt text](image-1.png)
+- **Scheduler:** Daily at 4PM
+- **Tasks:** Daily stock data is collected from `vnstock` and processed at hourly intervals, after which the processed data is sent to Google Cloud Storage. Furthermore, email alerts are triggered to notify successful execution of these tasks.
+- **Data Format:** ['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']
+**This command:** `stock_data=stock_historical_data (symbol=stock, start_date=current_date, end_date=current_date, resolution=resolution, type='stock')`
     
-    1.2. __Send_gsc_1D:__ Send processed data to Google Cloud Storage.
+2. **Stock_pipeline-3M-1Y:** [collect_gcs.py](./src/pluggin/collect_gcs.py)
 
-    1.3. __Successful_Alert_Project_1D:__ Email alert for successful pipeline execution.
+![Alt text](image-3.png)
 
-2. **DAG vnstock-pipeline-3M-1Y:** 
+- **Scheduler:** Daily at 20PM
 
-- Scheduler: Every hour from 8 PM
+- **Task:** The system gathers a year's worth of data and stores in Google Cloud Storage. Use Spark to process data from Google Cloud Storage, then compute the most consistency growing stock codes over three-month period, where stability is defined by an average index increase within a 10% amplitude range. The results are then sent to Bigquery for advanced analysis.
 
-- Tasks:
-    
-    2.1. __Stock_collection_1Y:__ [collect_gcs.py](./src/pluggin/collect_gcs.py)
-    
-    Collect and process stock data for current day hourly with form:
+- **Data Format:** ['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']
+**This command:** `stock_data=stock_historical_data (symbol=stock, start_date=start_date, end_date=current_date, resolution=resolution, type='stock')` with `start_date` is one year before.
 
-    `['time', 'open', 'high','low', 'close','volume','ticker','type']`
+3. **vnstock-pipeline-1H:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
 
-    ![Alt text](image-1.png)
-    
-    2.2. __Send_gsc_1Y:__ [collect_gcs.py](./src/pluggin/collect_gcs.py)
-    
-    Send processed data to Google Cloud Storage.
+![Alt text](image-4.png)
 
-    2.3. __Vm_pubsub_1Y:__[vm_pubsub_bq.py](./src/pluggin/vm_pubsub_bq.py)
-    
-    Publish stock index data to Cloud Pub/Sub for the lastest year.
+- **Scheduler:** Between 8AM - 4PM
 
-    2.4.__Vm_pubsub_3M:__[vm_pubsub_bq.py](./src/pluggin/vm_pubsub_bq.py)
-    
-    Publish stock index data to Cloud Pub/Sub for the last 3 months.
+- **Task:** Users is possible to select their preferred stock codes for monitoring. This module continually updates the stock indices every hour during trading hours and publishes them to Cloud Pub/Sub. Upon new data being published on Cloud Pub/Sub, it triggers the system to read and incorporate the fresh information into Bigquery for seamless integration of real-time data updates.
 
-    2.5.__Successful_Alert_Project_1Y_3M:__
-    
-    Email alert for successful pipeline execution.
+Cloud function trigger sucessfully
 
+![Alt text](image-5.png)
 
+Bigquery receive and present data
 
+![Alt text](image-6.png)
+
+- **Data Format:** ['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']
+**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
+
+4. **vnstock-pipeline-1M:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
+
+![Alt text](image-7.png)
+
+- **Scheduler:** Between 8AM - 4PM with every 5 minutes
+
+- **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
+
+![Alt text](image-9.png)
+
+- **Data Format:** ['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']
+**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
+
+5. **Visualization:**
+
+![Alt text](image-8.png)
 
 
 
