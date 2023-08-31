@@ -1,0 +1,121 @@
+[2023-08-24T03:53:56.853+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:39:47.420172+00:00 [queued]>
+[2023-08-24T03:53:56.858+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:39:47.420172+00:00 [queued]>
+[2023-08-24T03:53:56.858+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-08-24T03:53:56.870+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Stock_collection_1Y> on 2023-08-24 03:39:47.420172+00:00
+[2023-08-24T03:53:56.874+0000] {standard_task_runner.py:57} INFO - Started process 29205 to run task
+[2023-08-24T03:53:56.874+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-24T03:53:56.882+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline', 'Stock_collection_1Y', 'manual__2023-08-24T03:39:47.420172+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpksr2hz95']
+[2023-08-24T03:53:56.882+0000] {standard_task_runner.py:85} INFO - Job 67: Subtask Stock_collection_1Y
+[2023-08-24T03:53:56.916+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:39:47.420172+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-24T03:53:56.962+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong' AIRFLOW_CTX_DAG_ID='vnstock-pipeline' AIRFLOW_CTX_TASK_ID='Stock_collection_1Y' AIRFLOW_CTX_EXECUTION_DATE='2023-08-24T03:39:47.420172+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-24T03:39:47.420172+00:00'
+[2023-08-24T03:53:57.190+0000] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2023-08-24T03:53:57.191+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-24T03:53:57.192+0000] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+[2023-08-24T03:53:57.194+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-24T03:53:57.794+0000] {logging_mixin.py:151} INFO - 1606/1607_SSI
+[2023-08-24T03:53:58.485+0000] {logging_mixin.py:151} INFO - 1605/1607_BCM
+[2023-08-24T03:53:59.173+0000] {logging_mixin.py:151} INFO - 1604/1607_VHM
+[2023-08-24T03:53:59.864+0000] {logging_mixin.py:151} INFO - 1603/1607_VIC
+[2023-08-24T03:54:00.554+0000] {logging_mixin.py:151} INFO - 1602/1607_VRE
+[2023-08-24T03:54:01.229+0000] {logging_mixin.py:151} INFO - 1601/1607_BVH
+[2023-08-24T03:54:01.928+0000] {logging_mixin.py:151} INFO - 1600/1607_POW
+[2023-08-24T03:54:02.625+0000] {logging_mixin.py:151} INFO - 1599/1607_GAS
+[2023-08-24T03:54:03.314+0000] {logging_mixin.py:151} INFO - 1598/1607_ACB
+[2023-08-24T03:54:04.002+0000] {logging_mixin.py:151} INFO - 1597/1607_BID
+[2023-08-24T03:54:04.700+0000] {logging_mixin.py:151} INFO - 1596/1607_CTG
+[2023-08-24T03:54:05.387+0000] {logging_mixin.py:151} INFO - 1595/1607_HDB
+[2023-08-24T03:54:06.098+0000] {logging_mixin.py:151} INFO - 1594/1607_MBB
+[2023-08-24T03:54:06.786+0000] {logging_mixin.py:151} INFO - 1593/1607_SSB
+[2023-08-24T03:54:07.479+0000] {logging_mixin.py:151} INFO - 1592/1607_SHB
+[2023-08-24T03:54:08.161+0000] {logging_mixin.py:151} INFO - 1591/1607_STB
+[2023-08-24T03:54:08.843+0000] {logging_mixin.py:151} INFO - 1590/1607_TCB
+[2023-08-24T03:54:09.536+0000] {logging_mixin.py:151} INFO - 1589/1607_TPB
+[2023-08-24T03:54:10.222+0000] {logging_mixin.py:151} INFO - 1588/1607_VCB
+[2023-08-24T03:54:10.914+0000] {logging_mixin.py:151} INFO - 1587/1607_VIB
+[2023-08-24T03:54:11.605+0000] {logging_mixin.py:151} INFO - 1586/1607_VPB
+[2023-08-24T03:54:11.978+0000] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2023-08-24T03:54:11.982+0000] {process_utils.py:131} INFO - Sending Signals.SIGTERM to group 29205. PIDs of all processes in the group: [29205]
+[2023-08-24T03:54:11.982+0000] {process_utils.py:86} INFO - Sending the signal Signals.SIGTERM to group 29205
+[2023-08-24T03:54:11.982+0000] {taskinstance.py:1632} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-08-24T03:54:11.983+0000] {logging_mixin.py:151} INFO - 1585_error_1607_HPG
+[2023-08-24T03:54:11.983+0000] {collect_gcs.py:40} ERROR - message
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/airflow/src/pluggin/collect_gcs.py", line 29, in stock_collection_1Y
+    stock_data=stock_historical_data (symbol=stock, start_date=start_date, end_date=current_date, resolution=resolution, type='stock')
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/vnstock/stock.py", line 148, in stock_historical_data
+    df = stock_ohlc(symbol, start_date, end_date, resolution, type, headers)
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/vnstock/stock.py", line 178, in stock_ohlc
+    response = requests.request("GET", url, headers=headers).json()
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 366, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1914, in do_handshake
+    result = _lib.SSL_do_handshake(self._ssl)
+  File "/usr/local/lib/python3.8/dist-packages/airflow/models/taskinstance.py", line 1634, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2023-08-24T03:54:12.680+0000] {logging_mixin.py:151} INFO - 1584/1607_GVR
+[2023-08-24T03:54:13.369+0000] {logging_mixin.py:151} INFO - 1583/1607_MSN
+[2023-08-24T03:54:14.058+0000] {logging_mixin.py:151} INFO - 1582/1607_VNM
+[2023-08-24T03:54:14.754+0000] {logging_mixin.py:151} INFO - 1581/1607_SAB
+[2023-08-24T03:54:15.441+0000] {logging_mixin.py:151} INFO - 1580/1607_VJC
+[2023-08-24T03:54:16.129+0000] {logging_mixin.py:151} INFO - 1579/1607_MWG
+[2023-08-24T03:54:16.823+0000] {logging_mixin.py:151} INFO - 1578/1607_PLX
+[2023-08-24T03:54:17.510+0000] {logging_mixin.py:151} INFO - 1577/1607_FPT
+[2023-08-24T03:54:18.198+0000] {logging_mixin.py:151} INFO - 1576/1607_MFS
+[2023-08-24T03:54:18.902+0000] {logging_mixin.py:151} INFO - 1575/1607_ABC
+[2023-08-24T03:54:19.596+0000] {logging_mixin.py:151} INFO - 1574/1607_VGI
+[2023-08-24T03:54:20.289+0000] {logging_mixin.py:151} INFO - 1573/1607_FOX
+[2023-08-24T03:54:20.976+0000] {logging_mixin.py:151} INFO - 1572/1607_PAI
+[2023-08-24T03:54:21.666+0000] {logging_mixin.py:151} INFO - 1571/1607_PIA
+[2023-08-24T03:54:22.356+0000] {logging_mixin.py:151} INFO - 1570/1607_PTP
+[2023-08-24T03:54:23.062+0000] {logging_mixin.py:151} INFO - 1569/1607_TTN
+[2023-08-24T03:54:23.744+0000] {logging_mixin.py:151} INFO - 1568/1607_FUCTVGF3
+[2023-08-24T03:54:24.435+0000] {logging_mixin.py:151} INFO - 1567/1607_FUEIP100
+[2023-08-24T03:54:25.124+0000] {logging_mixin.py:151} INFO - 1566/1607_FUEKIV30
+[2023-08-24T03:54:25.813+0000] {logging_mixin.py:151} INFO - 1565/1607_FUCTVGF4
+[2023-08-24T03:54:26.493+0000] {logging_mixin.py:151} INFO - 1564/1607_FUEDCMID
+[2023-08-24T03:54:27.178+0000] {logging_mixin.py:151} INFO - 1563/1607_FUEKIVFS
+[2023-08-24T03:54:27.864+0000] {logging_mixin.py:151} INFO - 1562/1607_FUEMAVND
+[2023-08-24T03:54:28.552+0000] {logging_mixin.py:151} INFO - 1561/1607_FUEFCV50
+[2023-08-24T03:54:29.235+0000] {logging_mixin.py:151} INFO - 1560/1607_FUEBFVND
+[2023-08-24T03:54:29.920+0000] {logging_mixin.py:151} INFO - 1559/1607_FUESSV50
+[2023-08-24T03:54:30.631+0000] {logging_mixin.py:151} INFO - 1558/1607_E1VFVN30
+[2023-08-24T03:54:31.333+0000] {logging_mixin.py:151} INFO - 1557/1607_FUESSVFL
+[2023-08-24T03:54:31.336+0000] {python.py:194} INFO - Done. Returned value was: Done
+[2023-08-24T03:54:31.348+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=vnstock-pipeline, task_id=Stock_collection_1Y, execution_date=20230824T033947, start_date=20230824T035356, end_date=20230824T035431
+[2023-08-24T03:54:31.381+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=29205, status='terminated', exitcode=0, started='03:53:56') (29205) terminated with exit code 0

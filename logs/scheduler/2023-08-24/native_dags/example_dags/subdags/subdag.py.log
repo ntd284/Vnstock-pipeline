@@ -1,0 +1,220 @@
+[2023-08-24T04:21:45.447+0000] {processor.py:157} INFO - Started process (PID=37585) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:21:45.448+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:21:45.449+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:21:45.448+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:21:45.452+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:21:45.464+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.021 seconds
+[2023-08-24T04:30:58.804+0000] {processor.py:157} INFO - Started process (PID=41460) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:30:58.805+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:30:58.806+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:30:58.806+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:30:58.808+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:30:58.819+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:32:00.666+0000] {processor.py:157} INFO - Started process (PID=41658) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:32:00.667+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:32:00.668+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:32:00.668+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:32:00.670+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:32:00.681+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:33:02.697+0000] {processor.py:157} INFO - Started process (PID=41849) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:33:02.699+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:33:02.700+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:33:02.699+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:33:02.702+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:33:02.713+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:34:01.913+0000] {processor.py:157} INFO - Started process (PID=42032) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:34:01.914+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:34:01.915+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:34:01.915+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:34:01.918+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:34:01.929+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:35:00.100+0000] {processor.py:157} INFO - Started process (PID=42228) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:00.102+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:35:00.103+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:35:00.102+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:00.106+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:00.118+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.022 seconds
+[2023-08-24T04:35:59.512+0000] {processor.py:157} INFO - Started process (PID=42424) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:59.514+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:35:59.515+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:35:59.514+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:59.517+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:35:59.528+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:36:54.766+0000] {processor.py:157} INFO - Started process (PID=42606) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:36:54.768+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:36:54.769+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:36:54.768+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:36:54.771+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:36:54.782+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:37:49.910+0000] {processor.py:157} INFO - Started process (PID=42787) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:37:49.913+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:37:49.914+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:37:49.914+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:37:49.916+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:37:49.927+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:38:48.406+0000] {processor.py:157} INFO - Started process (PID=42971) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:38:48.409+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:38:48.410+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:38:48.409+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:38:48.412+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:38:48.423+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.021 seconds
+[2023-08-24T04:39:48.681+0000] {processor.py:157} INFO - Started process (PID=43167) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:39:48.682+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:39:48.683+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:39:48.683+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:39:48.686+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:39:48.697+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:40:49.460+0000] {processor.py:157} INFO - Started process (PID=43350) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:40:49.462+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:40:49.463+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:40:49.462+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:40:49.465+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:40:49.478+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.022 seconds
+[2023-08-24T04:41:49.656+0000] {processor.py:157} INFO - Started process (PID=43534) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:41:49.657+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:41:49.658+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:41:49.658+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:41:49.660+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:41:49.672+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:42:48.850+0000] {processor.py:157} INFO - Started process (PID=43724) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:42:48.853+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:42:48.854+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:42:48.854+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:42:48.856+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:42:48.867+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.021 seconds
+[2023-08-24T04:43:49.822+0000] {processor.py:157} INFO - Started process (PID=43908) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:43:49.823+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:43:49.824+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:43:49.824+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:43:49.827+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:43:49.838+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:44:50.786+0000] {processor.py:157} INFO - Started process (PID=44093) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:44:50.787+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:44:50.788+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:44:50.788+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:44:50.790+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:44:50.801+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:45:52.364+0000] {processor.py:157} INFO - Started process (PID=44276) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:45:52.366+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:45:52.367+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:45:52.366+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:45:52.369+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:45:52.382+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.023 seconds
+[2023-08-24T04:46:54.134+0000] {processor.py:157} INFO - Started process (PID=44459) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:46:54.136+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:46:54.137+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:46:54.136+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:46:54.139+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:46:54.153+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.023 seconds
+[2023-08-24T04:47:56.446+0000] {processor.py:157} INFO - Started process (PID=44643) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:47:56.447+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:47:56.448+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:47:56.448+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:47:56.450+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:47:56.462+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:48:57.914+0000] {processor.py:157} INFO - Started process (PID=44826) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:48:57.916+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:48:57.916+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:48:57.916+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:48:57.919+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:48:57.930+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:50:00.042+0000] {processor.py:157} INFO - Started process (PID=45010) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:00.044+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:50:00.045+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:50:00.044+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:00.047+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:00.058+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:50:58.342+0000] {processor.py:157} INFO - Started process (PID=45195) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:58.343+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:50:58.344+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:50:58.344+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:58.347+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:50:58.358+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:51:59.224+0000] {processor.py:157} INFO - Started process (PID=45377) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:51:59.228+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:51:59.229+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:51:59.228+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:51:59.231+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:51:59.244+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.024 seconds
+[2023-08-24T04:53:00.667+0000] {processor.py:157} INFO - Started process (PID=45566) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:53:00.668+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:53:00.669+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:53:00.669+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:53:00.671+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:53:00.682+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:54:03.269+0000] {processor.py:157} INFO - Started process (PID=45749) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:54:03.271+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:54:03.272+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:54:03.271+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:54:03.274+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:54:03.287+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.021 seconds
+[2023-08-24T04:55:03.734+0000] {processor.py:157} INFO - Started process (PID=45932) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:55:03.736+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:55:03.737+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:55:03.736+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:55:03.739+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:55:03.750+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:56:03.622+0000] {processor.py:157} INFO - Started process (PID=46120) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:56:03.624+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:56:03.625+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:56:03.625+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:56:03.627+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:56:03.639+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:57:10.073+0000] {processor.py:157} INFO - Started process (PID=46317) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:57:10.074+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:57:10.075+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:57:10.075+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:57:10.078+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:57:10.089+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T04:58:13.835+0000] {processor.py:157} INFO - Started process (PID=46501) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:58:13.836+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:58:13.837+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:58:13.837+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:58:13.840+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:58:13.850+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T04:59:15.102+0000] {processor.py:157} INFO - Started process (PID=46684) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:59:15.103+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T04:59:15.104+0000] {logging_mixin.py:151} INFO - [2023-08-24T04:59:15.104+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:59:15.106+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T04:59:15.118+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:00:19.369+0000] {processor.py:157} INFO - Started process (PID=46868) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:00:19.370+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:00:19.371+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:00:19.371+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:00:19.374+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:00:19.385+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:01:18.337+0000] {processor.py:157} INFO - Started process (PID=47065) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:01:18.339+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:01:18.340+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:01:18.340+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:01:18.343+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:01:18.356+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.022 seconds
+[2023-08-24T05:02:16.203+0000] {processor.py:157} INFO - Started process (PID=47251) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:02:16.205+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:02:16.206+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:02:16.205+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:02:16.208+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:02:16.219+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T05:03:17.477+0000] {processor.py:157} INFO - Started process (PID=47439) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:03:17.479+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:03:17.480+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:03:17.479+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:03:17.482+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:03:17.493+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:04:16.478+0000] {processor.py:157} INFO - Started process (PID=47622) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:04:16.480+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:04:16.481+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:04:16.481+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:04:16.483+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:04:16.494+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:05:16.635+0000] {processor.py:157} INFO - Started process (PID=47818) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:05:16.636+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:05:16.637+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:05:16.637+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:05:16.640+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:05:16.650+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T05:06:14.991+0000] {processor.py:157} INFO - Started process (PID=48014) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:06:14.993+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:06:14.993+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:06:14.993+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:06:14.996+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:06:15.007+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.019 seconds
+[2023-08-24T05:07:11.485+0000] {processor.py:157} INFO - Started process (PID=48196) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:07:11.489+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:07:11.490+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:07:11.489+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:07:11.492+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:07:11.504+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.022 seconds
+[2023-08-24T05:08:09.762+0000] {processor.py:157} INFO - Started process (PID=48380) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:08:09.763+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:08:09.764+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:08:09.764+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:08:09.767+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:08:09.781+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.024 seconds
+[2023-08-24T05:09:10.370+0000] {processor.py:157} INFO - Started process (PID=48576) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:09:10.371+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:09:10.372+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:09:10.372+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:09:10.374+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:09:10.386+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:10:09.368+0000] {processor.py:157} INFO - Started process (PID=48759) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:10:09.369+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:10:09.370+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:10:09.370+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:10:09.373+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:10:09.384+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:11:23.910+0000] {processor.py:157} INFO - Started process (PID=48915) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:11:23.912+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:11:23.913+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:11:23.912+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:11:23.915+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:11:23.926+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds
+[2023-08-24T05:12:25.413+0000] {processor.py:157} INFO - Started process (PID=49111) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:12:25.416+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:12:25.417+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:12:25.416+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:12:25.419+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:12:25.430+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.021 seconds
+[2023-08-24T05:13:27.128+0000] {processor.py:157} INFO - Started process (PID=49316) to work on /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:13:27.129+0000] {processor.py:829} INFO - Processing file /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2023-08-24T05:13:27.130+0000] {logging_mixin.py:151} INFO - [2023-08-24T05:13:27.130+0000] {dagbag.py:539} INFO - Filling up the DagBag from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:13:27.133+0000] {processor.py:841} WARNING - No viable dags retrieved from /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py
+[2023-08-24T05:13:27.144+0000] {processor.py:179} INFO - Processing /usr/local/lib/python3.8/dist-packages/airflow/example_dags/subdags/subdag.py took 0.020 seconds

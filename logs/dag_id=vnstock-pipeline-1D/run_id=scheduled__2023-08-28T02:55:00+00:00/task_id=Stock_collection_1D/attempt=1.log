@@ -1,0 +1,214 @@
+[2023-08-30T02:45:32.616+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline-1D.Stock_collection_1D scheduled__2023-08-28T02:55:00+00:00 [queued]>
+[2023-08-30T02:45:32.621+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline-1D.Stock_collection_1D scheduled__2023-08-28T02:55:00+00:00 [queued]>
+[2023-08-30T02:45:32.622+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-08-30T02:45:32.634+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Stock_collection_1D> on 2023-08-28 02:55:00+00:00
+[2023-08-30T02:45:32.638+0000] {standard_task_runner.py:57} INFO - Started process 230811 to run task
+[2023-08-30T02:45:32.638+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-30T02:45:32.646+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline-1D', 'Stock_collection_1D', 'scheduled__2023-08-28T02:55:00+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpq6sgieqm']
+[2023-08-30T02:45:32.646+0000] {standard_task_runner.py:85} INFO - Job 187: Subtask Stock_collection_1D
+[2023-08-30T02:45:32.688+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline-1D.Stock_collection_1D scheduled__2023-08-28T02:55:00+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-30T02:45:32.737+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='vnstock-pipeline-1D' AIRFLOW_CTX_TASK_ID='Stock_collection_1D' AIRFLOW_CTX_EXECUTION_DATE='2023-08-28T02:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-28T02:55:00+00:00'
+[2023-08-30T02:45:34.709+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:34.711+0000] {logging_mixin.py:151} INFO - 1606/1607_SSI
+[2023-08-30T02:45:36.764+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:36.764+0000] {logging_mixin.py:151} INFO - 1605/1607_BCM
+[2023-08-30T02:45:38.488+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:38.489+0000] {logging_mixin.py:151} INFO - 1604/1607_VHM
+[2023-08-30T02:45:40.276+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:40.276+0000] {logging_mixin.py:151} INFO - 1603/1607_VIC
+[2023-08-30T02:45:42.083+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:42.084+0000] {logging_mixin.py:151} INFO - 1602/1607_VRE
+[2023-08-30T02:45:43.854+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:43.854+0000] {logging_mixin.py:151} INFO - 1601/1607_BVH
+[2023-08-30T02:45:45.671+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:45.671+0000] {logging_mixin.py:151} INFO - 1600/1607_POW
+[2023-08-30T02:45:47.411+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:47.412+0000] {logging_mixin.py:151} INFO - 1599/1607_GAS
+[2023-08-30T02:45:49.162+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:49.163+0000] {logging_mixin.py:151} INFO - 1598/1607_ACB
+[2023-08-30T02:45:50.889+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:50.890+0000] {logging_mixin.py:151} INFO - 1597/1607_BID
+[2023-08-30T02:45:52.635+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:52.636+0000] {logging_mixin.py:151} INFO - 1596/1607_CTG
+[2023-08-30T02:45:54.372+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:54.373+0000] {logging_mixin.py:151} INFO - 1595/1607_HDB
+[2023-08-30T02:45:56.107+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:56.108+0000] {logging_mixin.py:151} INFO - 1594/1607_MBB
+[2023-08-30T02:45:57.918+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:57.919+0000] {logging_mixin.py:151} INFO - 1593/1607_SSB
+[2023-08-30T02:45:59.747+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:45:59.748+0000] {logging_mixin.py:151} INFO - 1592/1607_SHB
+[2023-08-30T02:46:01.487+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:01.488+0000] {logging_mixin.py:151} INFO - 1591/1607_STB
+[2023-08-30T02:46:03.208+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:03.209+0000] {logging_mixin.py:151} INFO - 1590/1607_TCB
+[2023-08-30T02:46:04.989+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:04.990+0000] {logging_mixin.py:151} INFO - 1589/1607_TPB
+[2023-08-30T02:46:06.744+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:06.745+0000] {logging_mixin.py:151} INFO - 1588/1607_VCB
+[2023-08-30T02:46:08.531+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:08.532+0000] {logging_mixin.py:151} INFO - 1587/1607_VIB
+[2023-08-30T02:46:10.301+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:10.301+0000] {logging_mixin.py:151} INFO - 1586/1607_VPB
+[2023-08-30T02:46:12.041+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:12.041+0000] {logging_mixin.py:151} INFO - 1585/1607_HPG
+[2023-08-30T02:46:13.771+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:13.772+0000] {logging_mixin.py:151} INFO - 1584/1607_GVR
+[2023-08-30T02:46:15.527+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:15.527+0000] {logging_mixin.py:151} INFO - 1583/1607_MSN
+[2023-08-30T02:46:17.310+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:17.311+0000] {logging_mixin.py:151} INFO - 1582/1607_VNM
+[2023-08-30T02:46:19.148+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:19.149+0000] {logging_mixin.py:151} INFO - 1581/1607_SAB
+[2023-08-30T02:46:20.967+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:20.968+0000] {logging_mixin.py:151} INFO - 1580/1607_VJC
+[2023-08-30T02:46:22.740+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:22.741+0000] {logging_mixin.py:151} INFO - 1579/1607_MWG
+[2023-08-30T02:46:24.569+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:24.570+0000] {logging_mixin.py:151} INFO - 1578/1607_PLX
+[2023-08-30T02:46:26.313+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:26.313+0000] {logging_mixin.py:151} INFO - 1577/1607_FPT
+[2023-08-30T02:46:28.074+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:28.075+0000] {logging_mixin.py:151} INFO - 1576/1607_MFS
+[2023-08-30T02:46:29.839+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:29.840+0000] {logging_mixin.py:151} INFO - 1575/1607_ABC
+[2023-08-30T02:46:31.654+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:31.655+0000] {logging_mixin.py:151} INFO - 1574/1607_VGI
+[2023-08-30T02:46:33.419+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:33.420+0000] {logging_mixin.py:151} INFO - 1573/1607_FOX
+[2023-08-30T02:46:35.183+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:35.183+0000] {logging_mixin.py:151} INFO - 1572/1607_PAI
+[2023-08-30T02:46:37.061+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:37.062+0000] {logging_mixin.py:151} INFO - 1571/1607_PIA
+[2023-08-30T02:46:38.836+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:38.837+0000] {logging_mixin.py:151} INFO - 1570/1607_PTP
+[2023-08-30T02:46:40.562+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:40.562+0000] {logging_mixin.py:151} INFO - 1569/1607_TTN
+[2023-08-30T02:46:42.316+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:42.317+0000] {logging_mixin.py:151} INFO - 1568/1607_FUCTVGF3
+[2023-08-30T02:46:44.078+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:44.079+0000] {logging_mixin.py:151} INFO - 1567/1607_FUEIP100
+[2023-08-30T02:46:45.839+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:45.840+0000] {logging_mixin.py:151} INFO - 1566/1607_FUEKIV30
+[2023-08-30T02:46:47.616+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:47.617+0000] {logging_mixin.py:151} INFO - 1565/1607_FUCTVGF4
+[2023-08-30T02:46:49.356+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:49.356+0000] {logging_mixin.py:151} INFO - 1564/1607_FUEDCMID
+[2023-08-30T02:46:51.137+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:51.138+0000] {logging_mixin.py:151} INFO - 1563/1607_FUEKIVFS
+[2023-08-30T02:46:52.908+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:52.909+0000] {logging_mixin.py:151} INFO - 1562/1607_FUEMAVND
+[2023-08-30T02:46:54.730+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:54.731+0000] {logging_mixin.py:151} INFO - 1561/1607_FUEFCV50
+[2023-08-30T02:46:56.489+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:56.489+0000] {logging_mixin.py:151} INFO - 1560/1607_FUEBFVND
+[2023-08-30T02:46:58.244+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:46:58.245+0000] {logging_mixin.py:151} INFO - 1559/1607_FUESSV50
+[2023-08-30T02:47:00.052+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:47:00.053+0000] {logging_mixin.py:151} INFO - 1558/1607_E1VFVN30
+[2023-08-30T02:47:01.810+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-30T02:47:01.810+0000] {logging_mixin.py:151} INFO - 1557/1607_FUESSVFL
+[2023-08-30T02:47:01.811+0000] {python.py:194} INFO - Done. Returned value was: Done
+[2023-08-30T02:47:01.824+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=vnstock-pipeline-1D, task_id=Stock_collection_1D, execution_date=20230828T025500, start_date=20230830T024532, end_date=20230830T024701
+[2023-08-30T02:47:01.866+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-30T02:47:01.878+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

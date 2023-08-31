@@ -1,0 +1,2 @@
+[2023-08-24T03:58:35.361+0000] {taskinstance.py:1149} INFO - Dependencies not met for <TaskInstance: vnstock-pipeline.Stock_collection_1D manual__2023-08-23T11:01:03.194505+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2023-08-24T03:58:35.366+0000] {local_task_job_runner.py:154} INFO - Task is not able to be run

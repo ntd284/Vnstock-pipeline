@@ -1,0 +1,433 @@
+[2023-08-23T11:37:46.557+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1D manual__2023-08-23T11:12:22.721080+00:00 [queued]>
+[2023-08-23T11:37:46.562+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1D manual__2023-08-23T11:12:22.721080+00:00 [queued]>
+[2023-08-23T11:37:46.562+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 4
+[2023-08-23T11:37:46.574+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Stock_collection_1D> on 2023-08-23 11:12:22.721080+00:00
+[2023-08-23T11:37:46.578+0000] {standard_task_runner.py:57} INFO - Started process 14135 to run task
+[2023-08-23T11:37:46.578+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-23T11:37:46.584+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline', 'Stock_collection_1D', 'manual__2023-08-23T11:12:22.721080+00:00', '--job-id', '21', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpfsp8meso']
+[2023-08-23T11:37:46.585+0000] {standard_task_runner.py:85} INFO - Job 21: Subtask Stock_collection_1D
+[2023-08-23T11:37:46.619+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline.Stock_collection_1D manual__2023-08-23T11:12:22.721080+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-23T11:37:46.668+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong' AIRFLOW_CTX_DAG_ID='vnstock-pipeline' AIRFLOW_CTX_TASK_ID='Stock_collection_1D' AIRFLOW_CTX_EXECUTION_DATE='2023-08-23T11:12:22.721080+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-23T11:12:22.721080+00:00'
+[2023-08-23T11:37:46.828+0000] {clientserver.py:505} INFO - Error while sending or receiving.
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2023-08-23T11:37:46.830+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-23T11:37:46.830+0000] {java_gateway.py:1052} INFO - Exception while sending command.
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 503, in send_command
+    self.socket.sendall(command.encode("utf-8"))
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/home/nguyentuanduong7/.local/lib/python3.8/site-packages/py4j/clientserver.py", line 506, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending
+[2023-08-23T11:37:46.834+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-23T11:37:47.565+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...      volume  ticker   type
+0 2023-08-23 09:00:00+07:00  31000.0  31150.0  ...   7751900.0     SSI  stock
+1 2023-08-23 10:00:00+07:00  30600.0  30750.0  ...   4755700.0     SSI  stock
+2 2023-08-23 11:00:00+07:00  30500.0  30600.0  ...   2292100.0     SSI  stock
+3 2023-08-23 13:00:00+07:00  30350.0  30950.0  ...  11039500.0     SSI  stock
+4 2023-08-23 14:00:00+07:00  30650.0  30900.0  ...   7059500.0     SSI  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:47.566+0000] {logging_mixin.py:151} INFO - 1606/1607_SSI
+[2023-08-23T11:37:48.253+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume  ticker   type
+0 2023-08-23 09:00:00+07:00  68100.0  68500.0  ...  37300.0     BCM  stock
+1 2023-08-23 10:00:00+07:00  67200.0  67400.0  ...  41500.0     BCM  stock
+2 2023-08-23 11:00:00+07:00  67000.0  67000.0  ...  26200.0     BCM  stock
+3 2023-08-23 13:00:00+07:00  66600.0  67000.0  ...  52100.0     BCM  stock
+4 2023-08-23 14:00:00+07:00  66500.0  67800.0  ...  44000.0     BCM  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:48.254+0000] {logging_mixin.py:151} INFO - 1605/1607_BCM
+[2023-08-23T11:37:48.935+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  56900.0  56900.0  ...  1758100.0     VHM  stock
+1 2023-08-23 10:00:00+07:00  55500.0  55800.0  ...   896300.0     VHM  stock
+2 2023-08-23 11:00:00+07:00  55000.0  55000.0  ...   406000.0     VHM  stock
+3 2023-08-23 13:00:00+07:00  54900.0  55500.0  ...  1543000.0     VHM  stock
+4 2023-08-23 14:00:00+07:00  54600.0  55100.0  ...  2081100.0     VHM  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:48.936+0000] {logging_mixin.py:151} INFO - 1604/1607_VHM
+[2023-08-23T11:37:49.616+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  69000.0  69000.0  ...  8304200.0     VIC  stock
+1 2023-08-23 10:00:00+07:00  67200.0  67400.0  ...  2616000.0     VIC  stock
+2 2023-08-23 11:00:00+07:00  66500.0  67100.0  ...   802800.0     VIC  stock
+3 2023-08-23 13:00:00+07:00  66500.0  67400.0  ...  5086800.0     VIC  stock
+4 2023-08-23 14:00:00+07:00  66200.0  66600.0  ...  3531700.0     VIC  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:49.617+0000] {logging_mixin.py:151} INFO - 1603/1607_VIC
+[2023-08-23T11:37:50.295+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  29750.0  29900.0  ...  1652800.0     VRE  stock
+1 2023-08-23 10:00:00+07:00  29000.0  29350.0  ...   553200.0     VRE  stock
+2 2023-08-23 11:00:00+07:00  29150.0  29150.0  ...   218900.0     VRE  stock
+3 2023-08-23 13:00:00+07:00  29050.0  29350.0  ...  1152700.0     VRE  stock
+4 2023-08-23 14:00:00+07:00  28900.0  29250.0  ...  1143600.0     VRE  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:50.296+0000] {logging_mixin.py:151} INFO - 1602/1607_VRE
+[2023-08-23T11:37:50.979+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  45500.0  45600.0  ...   58000.0     BVH  stock
+1 2023-08-23 10:00:00+07:00  45200.0  45350.0  ...   83700.0     BVH  stock
+2 2023-08-23 11:00:00+07:00  45150.0  45300.0  ...   35200.0     BVH  stock
+3 2023-08-23 13:00:00+07:00  45100.0  45300.0  ...  125100.0     BVH  stock
+4 2023-08-23 14:00:00+07:00  45000.0  45500.0  ...  153600.0     BVH  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:50.980+0000] {logging_mixin.py:151} INFO - 1601/1607_BVH
+[2023-08-23T11:37:51.660+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  12850.0  12950.0  ...  1420000.0     POW  stock
+1 2023-08-23 10:00:00+07:00  12700.0  12750.0  ...  2128300.0     POW  stock
+2 2023-08-23 11:00:00+07:00  12600.0  12650.0  ...  1653300.0     POW  stock
+3 2023-08-23 13:00:00+07:00  12550.0  12650.0  ...  4517500.0     POW  stock
+4 2023-08-23 14:00:00+07:00  12450.0  12650.0  ...  3475600.0     POW  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:51.661+0000] {logging_mixin.py:151} INFO - 1600/1607_POW
+[2023-08-23T11:37:52.337+0000] {logging_mixin.py:151} INFO -                        time      open      high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  100300.0  100600.0  ...   67200.0     GAS  stock
+1 2023-08-23 10:00:00+07:00  100700.0  102100.0  ...  268200.0     GAS  stock
+2 2023-08-23 11:00:00+07:00  101500.0  101900.0  ...   52900.0     GAS  stock
+3 2023-08-23 13:00:00+07:00  101600.0  101800.0  ...  126500.0     GAS  stock
+4 2023-08-23 14:00:00+07:00  101400.0  101900.0  ...  209500.0     GAS  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:52.338+0000] {logging_mixin.py:151} INFO - 1599/1607_GAS
+[2023-08-23T11:37:53.023+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  22200.0  22300.0  ...  1438600.0     ACB  stock
+1 2023-08-23 10:00:00+07:00  22050.0  22150.0  ...   857500.0     ACB  stock
+2 2023-08-23 11:00:00+07:00  22000.0  22050.0  ...   558200.0     ACB  stock
+3 2023-08-23 13:00:00+07:00  22050.0  22100.0  ...  1281000.0     ACB  stock
+4 2023-08-23 14:00:00+07:00  22000.0  22100.0  ...  1409000.0     ACB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:53.024+0000] {logging_mixin.py:151} INFO - 1598/1607_ACB
+[2023-08-23T11:37:53.702+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  46200.0  46200.0  ...  107800.0     BID  stock
+1 2023-08-23 10:00:00+07:00  45900.0  46000.0  ...  167800.0     BID  stock
+2 2023-08-23 11:00:00+07:00  45750.0  45800.0  ...   67800.0     BID  stock
+3 2023-08-23 13:00:00+07:00  45700.0  45750.0  ...  509800.0     BID  stock
+4 2023-08-23 14:00:00+07:00  45500.0  45850.0  ...  509900.0     BID  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:53.703+0000] {logging_mixin.py:151} INFO - 1597/1607_BID
+[2023-08-23T11:37:54.383+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  31650.0  31750.0  ...   526400.0     CTG  stock
+1 2023-08-23 10:00:00+07:00  31450.0  31550.0  ...   716800.0     CTG  stock
+2 2023-08-23 11:00:00+07:00  31200.0  31450.0  ...   255100.0     CTG  stock
+3 2023-08-23 13:00:00+07:00  31350.0  31350.0  ...  1480000.0     CTG  stock
+4 2023-08-23 14:00:00+07:00  31100.0  31550.0  ...  1399100.0     CTG  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:54.384+0000] {logging_mixin.py:151} INFO - 1596/1607_CTG
+[2023-08-23T11:37:55.061+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  16250.0  16400.0  ...  218900.0     HDB  stock
+1 2023-08-23 10:00:00+07:00  16300.0  16350.0  ...  271700.0     HDB  stock
+2 2023-08-23 11:00:00+07:00  16300.0  16350.0  ...   62900.0     HDB  stock
+3 2023-08-23 13:00:00+07:00  16300.0  16400.0  ...  644100.0     HDB  stock
+4 2023-08-23 14:00:00+07:00  16200.0  16400.0  ...  750500.0     HDB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:55.062+0000] {logging_mixin.py:151} INFO - 1595/1607_HDB
+[2023-08-23T11:37:55.747+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  18300.0  18300.0  ...  1161600.0     MBB  stock
+1 2023-08-23 10:00:00+07:00  18150.0  18200.0  ...   744400.0     MBB  stock
+2 2023-08-23 11:00:00+07:00  18100.0  18150.0  ...   314300.0     MBB  stock
+3 2023-08-23 13:00:00+07:00  18100.0  18200.0  ...  1735100.0     MBB  stock
+4 2023-08-23 14:00:00+07:00  18050.0  18150.0  ...  1841000.0     MBB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:55.748+0000] {logging_mixin.py:151} INFO - 1594/1607_MBB
+[2023-08-23T11:37:56.428+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  28300.0  28300.0  ...  122100.0     SSB  stock
+1 2023-08-23 10:00:00+07:00  27200.0  27600.0  ...  161800.0     SSB  stock
+2 2023-08-23 11:00:00+07:00  27450.0  27800.0  ...   71800.0     SSB  stock
+3 2023-08-23 13:00:00+07:00  27700.0  27750.0  ...  298200.0     SSB  stock
+4 2023-08-23 14:00:00+07:00  27550.0  28200.0  ...  579000.0     SSB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:56.429+0000] {logging_mixin.py:151} INFO - 1593/1607_SSB
+[2023-08-23T11:37:57.120+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  12200.0  12250.0  ...  1962400.0     SHB  stock
+1 2023-08-23 10:00:00+07:00  12000.0  12150.0  ...  1747200.0     SHB  stock
+2 2023-08-23 11:00:00+07:00  12050.0  12100.0  ...  3079800.0     SHB  stock
+3 2023-08-23 13:00:00+07:00  12000.0  12100.0  ...  5477100.0     SHB  stock
+4 2023-08-23 14:00:00+07:00  12000.0  12100.0  ...  4543100.0     SHB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:57.122+0000] {logging_mixin.py:151} INFO - 1592/1607_SHB
+[2023-08-23T11:37:57.803+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  32100.0  32200.0  ...  4861600.0     STB  stock
+1 2023-08-23 10:00:00+07:00  31500.0  31600.0  ...  9577500.0     STB  stock
+2 2023-08-23 11:00:00+07:00  31200.0  31250.0  ...  7001500.0     STB  stock
+3 2023-08-23 13:00:00+07:00  31000.0  31450.0  ...  9822600.0     STB  stock
+4 2023-08-23 14:00:00+07:00  31000.0  31300.0  ...  7390700.0     STB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:57.804+0000] {logging_mixin.py:151} INFO - 1591/1607_STB
+[2023-08-23T11:37:58.484+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  34000.0  34200.0  ...  3375600.0     TCB  stock
+1 2023-08-23 10:00:00+07:00  33700.0  33800.0  ...  2003800.0     TCB  stock
+2 2023-08-23 11:00:00+07:00  33650.0  33700.0  ...   564000.0     TCB  stock
+3 2023-08-23 13:00:00+07:00  33650.0  33750.0  ...  1790400.0     TCB  stock
+4 2023-08-23 14:00:00+07:00  33500.0  33700.0  ...  1354100.0     TCB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:58.485+0000] {logging_mixin.py:151} INFO - 1590/1607_TCB
+[2023-08-23T11:37:59.170+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  18650.0  18650.0  ...   503200.0     TPB  stock
+1 2023-08-23 10:00:00+07:00  18550.0  18600.0  ...  1140700.0     TPB  stock
+2 2023-08-23 11:00:00+07:00  18500.0  18600.0  ...   596700.0     TPB  stock
+3 2023-08-23 13:00:00+07:00  18500.0  18600.0  ...  1949600.0     TPB  stock
+4 2023-08-23 14:00:00+07:00  18450.0  18600.0  ...  1370200.0     TPB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:59.171+0000] {logging_mixin.py:151} INFO - 1589/1607_TPB
+[2023-08-23T11:37:59.853+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  88900.0  88900.0  ...  204300.0     VCB  stock
+1 2023-08-23 10:00:00+07:00  87900.0  88300.0  ...  227400.0     VCB  stock
+2 2023-08-23 11:00:00+07:00  87300.0  87700.0  ...  252000.0     VCB  stock
+3 2023-08-23 13:00:00+07:00  86600.0  87400.0  ...  497600.0     VCB  stock
+4 2023-08-23 14:00:00+07:00  86300.0  87100.0  ...  573500.0     VCB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:37:59.854+0000] {logging_mixin.py:151} INFO - 1588/1607_VCB
+[2023-08-23T11:38:00.540+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  19950.0  20000.0  ...  600600.0     VIB  stock
+1 2023-08-23 10:00:00+07:00  19800.0  19900.0  ...  633900.0     VIB  stock
+2 2023-08-23 11:00:00+07:00  19750.0  19850.0  ...  286200.0     VIB  stock
+3 2023-08-23 13:00:00+07:00  19700.0  19800.0  ...  726100.0     VIB  stock
+4 2023-08-23 14:00:00+07:00  19650.0  19800.0  ...  971200.0     VIB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:00.541+0000] {logging_mixin.py:151} INFO - 1587/1607_VIB
+[2023-08-23T11:38:01.216+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  20750.0  20850.0  ...  1580000.0     VPB  stock
+1 2023-08-23 10:00:00+07:00  20600.0  20650.0  ...  1637000.0     VPB  stock
+2 2023-08-23 11:00:00+07:00  20550.0  20550.0  ...  1108400.0     VPB  stock
+3 2023-08-23 13:00:00+07:00  20450.0  20600.0  ...  5694500.0     VPB  stock
+4 2023-08-23 14:00:00+07:00  20350.0  20600.0  ...  4396700.0     VPB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:01.217+0000] {logging_mixin.py:151} INFO - 1586/1607_VPB
+[2023-08-23T11:38:01.900+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  26350.0  26450.0  ...  2973300.0     HPG  stock
+1 2023-08-23 10:00:00+07:00  26100.0  26200.0  ...  4006100.0     HPG  stock
+2 2023-08-23 11:00:00+07:00  25750.0  25950.0  ...  2166800.0     HPG  stock
+3 2023-08-23 13:00:00+07:00  25750.0  26100.0  ...  7321700.0     HPG  stock
+4 2023-08-23 14:00:00+07:00  25750.0  25950.0  ...  5306400.0     HPG  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:01.901+0000] {logging_mixin.py:151} INFO - 1585/1607_HPG
+[2023-08-23T11:38:02.585+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  19500.0  19600.0  ...  202200.0     GVR  stock
+1 2023-08-23 10:00:00+07:00  19300.0  19550.0  ...  186600.0     GVR  stock
+2 2023-08-23 11:00:00+07:00  19350.0  19450.0  ...  102300.0     GVR  stock
+3 2023-08-23 13:00:00+07:00  19400.0  19450.0  ...  309700.0     GVR  stock
+4 2023-08-23 14:00:00+07:00  19150.0  19400.0  ...  200300.0     GVR  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:02.586+0000] {logging_mixin.py:151} INFO - 1584/1607_GVR
+[2023-08-23T11:38:03.269+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  78000.0  78600.0  ...  150200.0     MSN  stock
+1 2023-08-23 10:00:00+07:00  78100.0  78200.0  ...  215400.0     MSN  stock
+2 2023-08-23 11:00:00+07:00  77800.0  77900.0  ...  144200.0     MSN  stock
+3 2023-08-23 13:00:00+07:00  77800.0  78200.0  ...  497200.0     MSN  stock
+4 2023-08-23 14:00:00+07:00  77300.0  78200.0  ...  449000.0     MSN  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:03.270+0000] {logging_mixin.py:151} INFO - 1583/1607_MSN
+[2023-08-23T11:38:03.950+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  72400.0  72900.0  ...   596900.0     VNM  stock
+1 2023-08-23 10:00:00+07:00  71800.0  72100.0  ...   267600.0     VNM  stock
+2 2023-08-23 11:00:00+07:00  71900.0  71900.0  ...   129700.0     VNM  stock
+3 2023-08-23 13:00:00+07:00  71800.0  73000.0  ...   861400.0     VNM  stock
+4 2023-08-23 14:00:00+07:00  72300.0  73600.0  ...  1217200.0     VNM  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:03.951+0000] {logging_mixin.py:151} INFO - 1582/1607_VNM
+[2023-08-23T11:38:04.634+0000] {logging_mixin.py:151} INFO -                        time      open      high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  152500.0  152800.0  ...   42300.0     SAB  stock
+1 2023-08-23 10:00:00+07:00  151400.0  151600.0  ...   23300.0     SAB  stock
+2 2023-08-23 11:00:00+07:00  151400.0  151500.0  ...   33200.0     SAB  stock
+3 2023-08-23 13:00:00+07:00  151300.0  151400.0  ...  137800.0     SAB  stock
+4 2023-08-23 14:00:00+07:00  150000.0  150300.0  ...  116600.0     SAB  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:04.635+0000] {logging_mixin.py:151} INFO - 1581/1607_SAB
+[2023-08-23T11:38:05.313+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  97300.0  98500.0  ...  163000.0     VJC  stock
+1 2023-08-23 10:00:00+07:00  96700.0  97000.0  ...  186900.0     VJC  stock
+2 2023-08-23 11:00:00+07:00  96900.0  96900.0  ...   22900.0     VJC  stock
+3 2023-08-23 13:00:00+07:00  96400.0  97000.0  ...  371300.0     VJC  stock
+4 2023-08-23 14:00:00+07:00  96800.0  97500.0  ...  134300.0     VJC  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:05.314+0000] {logging_mixin.py:151} INFO - 1580/1607_VJC
+[2023-08-23T11:38:05.992+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...     volume  ticker   type
+0 2023-08-23 09:00:00+07:00  50700.0  50700.0  ...  2466100.0     MWG  stock
+1 2023-08-23 10:00:00+07:00  50000.0  50500.0  ...   735200.0     MWG  stock
+2 2023-08-23 11:00:00+07:00  50000.0  50000.0  ...   205200.0     MWG  stock
+3 2023-08-23 13:00:00+07:00  49950.0  50300.0  ...   958500.0     MWG  stock
+4 2023-08-23 14:00:00+07:00  49750.0  50100.0  ...   592900.0     MWG  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:05.993+0000] {logging_mixin.py:151} INFO - 1579/1607_MWG
+[2023-08-23T11:38:06.676+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  38100.0  38100.0  ...  124700.0     PLX  stock
+1 2023-08-23 10:00:00+07:00  37800.0  37800.0  ...  180100.0     PLX  stock
+2 2023-08-23 11:00:00+07:00  37550.0  37600.0  ...   72100.0     PLX  stock
+3 2023-08-23 13:00:00+07:00  37500.0  37550.0  ...  488700.0     PLX  stock
+4 2023-08-23 14:00:00+07:00  37000.0  37700.0  ...  343600.0     PLX  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:06.677+0000] {logging_mixin.py:151} INFO - 1578/1607_PLX
+[2023-08-23T11:38:07.364+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume  ticker   type
+0 2023-08-23 09:00:00+07:00  86400.0  86800.0  ...  209500.0     FPT  stock
+1 2023-08-23 10:00:00+07:00  85800.0  86200.0  ...  185400.0     FPT  stock
+2 2023-08-23 11:00:00+07:00  85800.0  85800.0  ...   67300.0     FPT  stock
+3 2023-08-23 13:00:00+07:00  85500.0  86200.0  ...  323800.0     FPT  stock
+4 2023-08-23 14:00:00+07:00  85500.0  86500.0  ...  632500.0     FPT  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:07.365+0000] {logging_mixin.py:151} INFO - 1577/1607_FPT
+[2023-08-23T11:38:08.040+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...  volume  ticker   type
+0 2023-08-23 14:00:00+07:00  29000.0  29000.0  ...   100.0     MFS  stock
+
+[1 rows x 8 columns]
+[2023-08-23T11:38:08.041+0000] {logging_mixin.py:151} INFO - 1576/1607_MFS
+[2023-08-23T11:38:08.719+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...  volume  ticker   type
+0 2023-08-23 10:00:00+07:00  15400.0  15400.0  ...  2000.0     ABC  stock
+1 2023-08-23 13:00:00+07:00  15500.0  16500.0  ...  6100.0     ABC  stock
+2 2023-08-23 14:00:00+07:00  16300.0  16500.0  ...  7300.0     ABC  stock
+
+[3 rows x 8 columns]
+[2023-08-23T11:38:08.720+0000] {logging_mixin.py:151} INFO - 1575/1607_ABC
+[2023-08-23T11:38:09.404+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume  ticker   type
+0 2023-08-23 09:00:00+07:00  23500.0  24000.0  ...  58900.0     VGI  stock
+1 2023-08-23 10:00:00+07:00  23700.0  23800.0  ...  16400.0     VGI  stock
+2 2023-08-23 11:00:00+07:00  23600.0  23600.0  ...  15900.0     VGI  stock
+3 2023-08-23 13:00:00+07:00  23500.0  23800.0  ...  49300.0     VGI  stock
+4 2023-08-23 14:00:00+07:00  23600.0  23700.0  ...  33400.0     VGI  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:09.405+0000] {logging_mixin.py:151} INFO - 1574/1607_VGI
+[2023-08-23T11:38:10.090+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume  ticker   type
+0 2023-08-23 10:00:00+07:00  62600.0  62600.0  ...    100.0     FOX  stock
+1 2023-08-23 13:00:00+07:00  62700.0  62700.0  ...    100.0     FOX  stock
+2 2023-08-23 14:00:00+07:00  62700.0  62700.0  ...  13500.0     FOX  stock
+
+[3 rows x 8 columns]
+[2023-08-23T11:38:10.091+0000] {logging_mixin.py:151} INFO - 1573/1607_FOX
+[2023-08-23T11:38:12.202+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:12.202+0000] {logging_mixin.py:151} INFO - 1572/1607_PAI
+[2023-08-23T11:38:12.885+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...  volume  ticker   type
+0 2023-08-23 10:00:00+07:00  27600.0  27600.0  ...   100.0     PIA  stock
+1 2023-08-23 13:00:00+07:00  28600.0  28600.0  ...   100.0     PIA  stock
+
+[2 rows x 8 columns]
+[2023-08-23T11:38:12.886+0000] {logging_mixin.py:151} INFO - 1571/1607_PIA
+[2023-08-23T11:38:14.476+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:14.477+0000] {logging_mixin.py:151} INFO - 1570/1607_PTP
+[2023-08-23T11:38:15.156+0000] {logging_mixin.py:151} INFO -                        time    open    high  ...   volume  ticker   type
+0 2023-08-23 09:00:00+07:00  8300.0  8300.0  ...   4700.0     TTN  stock
+1 2023-08-23 10:00:00+07:00  8300.0  8300.0  ...  13800.0     TTN  stock
+2 2023-08-23 13:00:00+07:00  8300.0  8400.0  ...  50600.0     TTN  stock
+3 2023-08-23 14:00:00+07:00  8300.0  8300.0  ...    400.0     TTN  stock
+
+[4 rows x 8 columns]
+[2023-08-23T11:38:15.157+0000] {logging_mixin.py:151} INFO - 1569/1607_TTN
+[2023-08-23T11:38:16.841+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:16.841+0000] {logging_mixin.py:151} INFO - 1568/1607_FUCTVGF3
+[2023-08-23T11:38:18.596+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:18.597+0000] {logging_mixin.py:151} INFO - 1567/1607_FUEIP100
+[2023-08-23T11:38:19.277+0000] {logging_mixin.py:151} INFO -                        time    open    high  ...   volume    ticker   type
+0 2023-08-23 10:00:00+07:00  7850.0  7850.0  ...   1300.0  FUEKIV30  stock
+1 2023-08-23 11:00:00+07:00  7790.0  7790.0  ...   1200.0  FUEKIV30  stock
+2 2023-08-23 13:00:00+07:00  7830.0  7830.0  ...  50400.0  FUEKIV30  stock
+3 2023-08-23 14:00:00+07:00  7770.0  7810.0  ...   6400.0  FUEKIV30  stock
+
+[4 rows x 8 columns]
+[2023-08-23T11:38:19.278+0000] {logging_mixin.py:151} INFO - 1566/1607_FUEKIV30
+[2023-08-23T11:38:20.984+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:20.984+0000] {logging_mixin.py:151} INFO - 1565/1607_FUCTVGF4
+[2023-08-23T11:38:21.664+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume    ticker   type
+0 2023-08-23 09:00:00+07:00  10090.0  10090.0  ...    600.0  FUEDCMID  stock
+1 2023-08-23 10:00:00+07:00  10010.0  10010.0  ...  11600.0  FUEDCMID  stock
+2 2023-08-23 11:00:00+07:00   9960.0   9960.0  ...   1000.0  FUEDCMID  stock
+3 2023-08-23 13:00:00+07:00  10560.0  10610.0  ...  34800.0  FUEDCMID  stock
+4 2023-08-23 14:00:00+07:00   9920.0  10020.0  ...  22300.0  FUEDCMID  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:21.665+0000] {logging_mixin.py:151} INFO - 1564/1607_FUEDCMID
+[2023-08-23T11:38:22.346+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume    ticker   type
+0 2023-08-23 09:00:00+07:00  10650.0  10650.0  ...   3500.0  FUEKIVFS  stock
+1 2023-08-23 13:00:00+07:00  10530.0  10530.0  ...  50000.0  FUEKIVFS  stock
+
+[2 rows x 8 columns]
+[2023-08-23T11:38:22.347+0000] {logging_mixin.py:151} INFO - 1563/1607_FUEKIVFS
+[2023-08-23T11:38:23.024+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...   volume    ticker   type
+0 2023-08-23 09:00:00+07:00  10670.0  10680.0  ...   3800.0  FUEMAVND  stock
+1 2023-08-23 10:00:00+07:00  10620.0  10650.0  ...   6400.0  FUEMAVND  stock
+2 2023-08-23 11:00:00+07:00  10600.0  10630.0  ...   3000.0  FUEMAVND  stock
+3 2023-08-23 13:00:00+07:00  10610.0  10650.0  ...  12100.0  FUEMAVND  stock
+4 2023-08-23 14:00:00+07:00  10600.0  10630.0  ...   4700.0  FUEMAVND  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:23.025+0000] {logging_mixin.py:151} INFO - 1562/1607_FUEMAVND
+[2023-08-23T11:38:24.849+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:24.850+0000] {logging_mixin.py:151} INFO - 1561/1607_FUEFCV50
+[2023-08-23T11:38:26.537+0000] {logging_mixin.py:151} INFO - Empty DataFrame
+Columns: [time, open, high, low, close, volume, ticker, type]
+Index: []
+[2023-08-23T11:38:26.537+0000] {logging_mixin.py:151} INFO - 1560/1607_FUEBFVND
+[2023-08-23T11:38:27.216+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...  volume    ticker   type
+0 2023-08-23 09:00:00+07:00  18980.0  18980.0  ...  5000.0  FUESSV50  stock
+1 2023-08-23 10:00:00+07:00  18610.0  18610.0  ...  1500.0  FUESSV50  stock
+2 2023-08-23 13:00:00+07:00  18590.0  18600.0  ...   200.0  FUESSV50  stock
+3 2023-08-23 14:00:00+07:00  18600.0  18900.0  ...  3100.0  FUESSV50  stock
+
+[4 rows x 8 columns]
+[2023-08-23T11:38:27.217+0000] {logging_mixin.py:151} INFO - 1559/1607_FUESSV50
+[2023-08-23T11:38:27.904+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume    ticker   type
+0 2023-08-23 09:00:00+07:00  20830.0  20830.0  ...   23300.0  E1VFVN30  stock
+1 2023-08-23 10:00:00+07:00  20560.0  20600.0  ...   58500.0  E1VFVN30  stock
+2 2023-08-23 11:00:00+07:00  20460.0  20460.0  ...   71800.0  E1VFVN30  stock
+3 2023-08-23 13:00:00+07:00  20470.0  20510.0  ...  186700.0  E1VFVN30  stock
+4 2023-08-23 14:00:00+07:00  20410.0  20500.0  ...   82400.0  E1VFVN30  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:27.905+0000] {logging_mixin.py:151} INFO - 1558/1607_E1VFVN30
+[2023-08-23T11:38:28.588+0000] {logging_mixin.py:151} INFO -                        time     open     high  ...    volume    ticker   type
+0 2023-08-23 09:00:00+07:00  19700.0  19700.0  ...   94600.0  FUESSVFL  stock
+1 2023-08-23 10:00:00+07:00  18710.0  18770.0  ...  152700.0  FUESSVFL  stock
+2 2023-08-23 11:00:00+07:00  18700.0  18700.0  ...    1000.0  FUESSVFL  stock
+3 2023-08-23 13:00:00+07:00  18850.0  18940.0  ...    4400.0  FUESSVFL  stock
+4 2023-08-23 14:00:00+07:00  18630.0  18720.0  ...    4300.0  FUESSVFL  stock
+
+[5 rows x 8 columns]
+[2023-08-23T11:38:28.589+0000] {logging_mixin.py:151} INFO - 1557/1607_FUESSVFL
+[2023-08-23T11:38:28.589+0000] {python.py:194} INFO - Done. Returned value was: Done
+[2023-08-23T11:38:28.602+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=vnstock-pipeline, task_id=Stock_collection_1D, execution_date=20230823T111222, start_date=20230823T113746, end_date=20230823T113828
+[2023-08-23T11:38:28.632+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-23T11:38:28.645+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check

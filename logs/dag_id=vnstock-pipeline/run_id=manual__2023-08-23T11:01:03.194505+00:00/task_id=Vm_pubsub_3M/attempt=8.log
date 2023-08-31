@@ -1,0 +1,15 @@
+[2023-08-23T12:18:32.910+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline.Vm_pubsub_3M manual__2023-08-23T11:01:03.194505+00:00 [queued]>
+[2023-08-23T12:18:32.916+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline.Vm_pubsub_3M manual__2023-08-23T11:01:03.194505+00:00 [queued]>
+[2023-08-23T12:18:32.916+0000] {taskinstance.py:1361} INFO - Starting attempt 8 of 4
+[2023-08-23T12:18:32.928+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Vm_pubsub_3M> on 2023-08-23 11:01:03.194505+00:00
+[2023-08-23T12:18:32.931+0000] {standard_task_runner.py:57} INFO - Started process 18690 to run task
+[2023-08-23T12:18:32.931+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-23T12:18:32.938+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline', 'Vm_pubsub_3M', 'manual__2023-08-23T11:01:03.194505+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmp73n85fw8']
+[2023-08-23T12:18:32.939+0000] {standard_task_runner.py:85} INFO - Job 48: Subtask Vm_pubsub_3M
+[2023-08-23T12:18:32.973+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline.Vm_pubsub_3M manual__2023-08-23T11:01:03.194505+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-23T12:18:33.020+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong' AIRFLOW_CTX_DAG_ID='vnstock-pipeline' AIRFLOW_CTX_TASK_ID='Vm_pubsub_3M' AIRFLOW_CTX_EXECUTION_DATE='2023-08-23T11:01:03.194505+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-23T11:01:03.194505+00:00'
+[2023-08-23T12:18:37.918+0000] {logging_mixin.py:151} INFO - root
+ |-- Time: timestamp (nullable = true)
+ |-- Ticker: string (nullable = true)
+ |-- Close: double (nullable = true)
+ |-- Percentage_Change: double (nullable = true)

@@ -1,0 +1,64 @@
+[2023-08-24T03:55:48.935+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:41:56.667927+00:00 [None]>
+[2023-08-24T03:55:48.940+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:41:56.667927+00:00 [None]>
+[2023-08-24T03:55:48.940+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-08-24T03:55:48.953+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Stock_collection_1Y> on 2023-08-24 03:41:56.667927+00:00
+[2023-08-24T03:55:48.956+0000] {standard_task_runner.py:57} INFO - Started process 29488 to run task
+[2023-08-24T03:55:48.956+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-24T03:55:48.963+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline', 'Stock_collection_1Y', 'manual__2023-08-24T03:41:56.667927+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpjw9b9ndl']
+[2023-08-24T03:55:48.963+0000] {standard_task_runner.py:85} INFO - Job 69: Subtask Stock_collection_1Y
+[2023-08-24T03:55:48.996+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline.Stock_collection_1Y manual__2023-08-24T03:41:56.667927+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-24T03:55:49.042+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong' AIRFLOW_CTX_DAG_ID='vnstock-pipeline' AIRFLOW_CTX_TASK_ID='Stock_collection_1Y' AIRFLOW_CTX_EXECUTION_DATE='2023-08-24T03:41:56.667927+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-24T03:41:56.667927+00:00'
+[2023-08-24T03:55:49.960+0000] {logging_mixin.py:151} INFO - 1606/1607_SSI
+[2023-08-24T03:55:50.649+0000] {logging_mixin.py:151} INFO - 1605/1607_BCM
+[2023-08-24T03:55:51.343+0000] {logging_mixin.py:151} INFO - 1604/1607_VHM
+[2023-08-24T03:55:52.035+0000] {logging_mixin.py:151} INFO - 1603/1607_VIC
+[2023-08-24T03:55:52.721+0000] {logging_mixin.py:151} INFO - 1602/1607_VRE
+[2023-08-24T03:55:53.409+0000] {logging_mixin.py:151} INFO - 1601/1607_BVH
+[2023-08-24T03:55:54.118+0000] {logging_mixin.py:151} INFO - 1600/1607_POW
+[2023-08-24T03:55:54.806+0000] {logging_mixin.py:151} INFO - 1599/1607_GAS
+[2023-08-24T03:55:55.496+0000] {logging_mixin.py:151} INFO - 1598/1607_ACB
+[2023-08-24T03:55:56.188+0000] {logging_mixin.py:151} INFO - 1597/1607_BID
+[2023-08-24T03:55:56.881+0000] {logging_mixin.py:151} INFO - 1596/1607_CTG
+[2023-08-24T03:55:57.564+0000] {logging_mixin.py:151} INFO - 1595/1607_HDB
+[2023-08-24T03:55:58.260+0000] {logging_mixin.py:151} INFO - 1594/1607_MBB
+[2023-08-24T03:55:58.957+0000] {logging_mixin.py:151} INFO - 1593/1607_SSB
+[2023-08-24T03:55:59.646+0000] {logging_mixin.py:151} INFO - 1592/1607_SHB
+[2023-08-24T03:56:00.335+0000] {logging_mixin.py:151} INFO - 1591/1607_STB
+[2023-08-24T03:56:01.025+0000] {logging_mixin.py:151} INFO - 1590/1607_TCB
+[2023-08-24T03:56:01.712+0000] {logging_mixin.py:151} INFO - 1589/1607_TPB
+[2023-08-24T03:56:02.402+0000] {logging_mixin.py:151} INFO - 1588/1607_VCB
+[2023-08-24T03:56:03.093+0000] {logging_mixin.py:151} INFO - 1587/1607_VIB
+[2023-08-24T03:56:03.805+0000] {logging_mixin.py:151} INFO - 1586/1607_VPB
+[2023-08-24T03:56:04.488+0000] {logging_mixin.py:151} INFO - 1585/1607_HPG
+[2023-08-24T03:56:05.220+0000] {logging_mixin.py:151} INFO - 1584/1607_GVR
+[2023-08-24T03:56:05.904+0000] {logging_mixin.py:151} INFO - 1583/1607_MSN
+[2023-08-24T03:56:06.607+0000] {logging_mixin.py:151} INFO - 1582/1607_VNM
+[2023-08-24T03:56:07.292+0000] {logging_mixin.py:151} INFO - 1581/1607_SAB
+[2023-08-24T03:56:07.986+0000] {logging_mixin.py:151} INFO - 1580/1607_VJC
+[2023-08-24T03:56:08.680+0000] {logging_mixin.py:151} INFO - 1579/1607_MWG
+[2023-08-24T03:56:09.379+0000] {logging_mixin.py:151} INFO - 1578/1607_PLX
+[2023-08-24T03:56:10.065+0000] {logging_mixin.py:151} INFO - 1577/1607_FPT
+[2023-08-24T03:56:10.748+0000] {logging_mixin.py:151} INFO - 1576/1607_MFS
+[2023-08-24T03:56:11.438+0000] {logging_mixin.py:151} INFO - 1575/1607_ABC
+[2023-08-24T03:56:12.122+0000] {logging_mixin.py:151} INFO - 1574/1607_VGI
+[2023-08-24T03:56:12.812+0000] {logging_mixin.py:151} INFO - 1573/1607_FOX
+[2023-08-24T03:56:13.493+0000] {logging_mixin.py:151} INFO - 1572/1607_PAI
+[2023-08-24T03:56:14.186+0000] {logging_mixin.py:151} INFO - 1571/1607_PIA
+[2023-08-24T03:56:14.866+0000] {logging_mixin.py:151} INFO - 1570/1607_PTP
+[2023-08-24T03:56:15.553+0000] {logging_mixin.py:151} INFO - 1569/1607_TTN
+[2023-08-24T03:56:16.243+0000] {logging_mixin.py:151} INFO - 1568/1607_FUCTVGF3
+[2023-08-24T03:56:17.679+0000] {logging_mixin.py:151} INFO - 1567/1607_FUEIP100
+[2023-08-24T03:56:18.375+0000] {logging_mixin.py:151} INFO - 1566/1607_FUEKIV30
+[2023-08-24T03:56:19.065+0000] {logging_mixin.py:151} INFO - 1565/1607_FUCTVGF4
+[2023-08-24T03:56:19.757+0000] {logging_mixin.py:151} INFO - 1564/1607_FUEDCMID
+[2023-08-24T03:56:20.446+0000] {logging_mixin.py:151} INFO - 1563/1607_FUEKIVFS
+[2023-08-24T03:56:21.151+0000] {logging_mixin.py:151} INFO - 1562/1607_FUEMAVND
+[2023-08-24T03:56:21.848+0000] {logging_mixin.py:151} INFO - 1561/1607_FUEFCV50
+[2023-08-24T03:56:22.529+0000] {logging_mixin.py:151} INFO - 1560/1607_FUEBFVND
+[2023-08-24T03:56:23.230+0000] {logging_mixin.py:151} INFO - 1559/1607_FUESSV50
+[2023-08-24T03:56:23.915+0000] {logging_mixin.py:151} INFO - 1558/1607_E1VFVN30
+[2023-08-24T03:56:24.618+0000] {logging_mixin.py:151} INFO - 1557/1607_FUESSVFL
+[2023-08-24T03:56:24.621+0000] {python.py:194} INFO - Done. Returned value was: Done
+[2023-08-24T03:56:24.634+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=vnstock-pipeline, task_id=Stock_collection_1Y, execution_date=20230824T034156, start_date=20230824T035548, end_date=20230824T035624
+[2023-08-24T03:56:24.683+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-24T03:56:24.692+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

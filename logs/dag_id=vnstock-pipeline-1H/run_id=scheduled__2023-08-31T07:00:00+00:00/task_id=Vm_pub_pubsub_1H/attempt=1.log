@@ -1,0 +1,18 @@
+[2023-08-31T08:11:35.001+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: vnstock-pipeline-1H.Vm_pub_pubsub_1H scheduled__2023-08-31T07:00:00+00:00 [queued]>
+[2023-08-31T08:11:35.005+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: vnstock-pipeline-1H.Vm_pub_pubsub_1H scheduled__2023-08-31T07:00:00+00:00 [queued]>
+[2023-08-31T08:11:35.005+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 4
+[2023-08-31T08:11:35.018+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Vm_pub_pubsub_1H> on 2023-08-31 07:00:00+00:00
+[2023-08-31T08:11:35.023+0000] {standard_task_runner.py:57} INFO - Started process 539292 to run task
+[2023-08-31T08:11:35.024+0000] {clientserver.py:543} INFO - Closing down clientserver connection
+[2023-08-31T08:11:35.037+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'vnstock-pipeline-1H', 'Vm_pub_pubsub_1H', 'scheduled__2023-08-31T07:00:00+00:00', '--job-id', '494', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmplp0m3d3f']
+[2023-08-31T08:11:35.037+0000] {standard_task_runner.py:85} INFO - Job 494: Subtask Vm_pub_pubsub_1H
+[2023-08-31T08:11:35.077+0000] {task_command.py:415} INFO - Running <TaskInstance: vnstock-pipeline-1H.Vm_pub_pubsub_1H scheduled__2023-08-31T07:00:00+00:00 [running]> on host vnstock-pipeline-vm.us-central1-c.c.vnstock-pipeline.internal
+[2023-08-31T08:11:35.131+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='nguyentuanduong555@gmail.com' AIRFLOW_CTX_DAG_OWNER='Duong_' AIRFLOW_CTX_DAG_ID='vnstock-pipeline-1H' AIRFLOW_CTX_TASK_ID='Vm_pub_pubsub_1H' AIRFLOW_CTX_EXECUTION_DATE='2023-08-31T07:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-31T07:00:00+00:00'
+[2023-08-31T08:11:35.287+0000] {logging_mixin.py:151} INFO - publish message id 8318891746097556
+[2023-08-31T08:11:35.329+0000] {logging_mixin.py:151} INFO - publish message id 8319889746424936
+[2023-08-31T08:11:35.373+0000] {logging_mixin.py:151} INFO - publish message id 8320111835739806
+[2023-08-31T08:11:35.433+0000] {logging_mixin.py:151} INFO - publish message id 8321496305637039
+[2023-08-31T08:11:35.433+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-08-31T08:11:35.438+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=vnstock-pipeline-1H, task_id=Vm_pub_pubsub_1H, execution_date=20230831T070000, start_date=20230831T081135, end_date=20230831T081135
+[2023-08-31T08:11:35.480+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-31T08:11:35.496+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check
