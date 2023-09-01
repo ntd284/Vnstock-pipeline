@@ -12,7 +12,7 @@ Follow the steps below to setup and run this ETL pipeline.
 
 Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation:** Make sure you have `Apache Airflow `correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
+1. **Apache Airflow Installation:** Make sure you have `Apache Airflow`correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
 
 
 2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/)
