@@ -8,7 +8,7 @@ This project contains process for building a pipeline using Apache Airflow. The 
 
 Follow the steps below to setup and run this ETL pipeline.
 
-### Prerequisites
+### Prerequisites and Installation
 
 Before setting up and running this ETL pipeline, please ensure you have the following prerequisites in place:
 
@@ -35,15 +35,7 @@ Before setting up and running this ETL pipeline, please ensure you have the foll
 
 5. **Dataproc:** Configure Dataproc and set up Spark to read data from Cloud Storage and perform data processing tasks. Refer to the [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html)
 
-
 These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
-
-### Installation and Configuration
-
-- **Virtual Machine (VM):** Ensure that you have a virtual machine instance set up with the OS Ubuntu 20.04 and environment for running Airflow tasks.
-- **Google Cloud Services:** Install and initialize services on google cloud website.
-- **Telegram bot:** Install and use library on `https://github.com/eternnoir/pyTelegramBotAPI`
-- **Airflow apache:** use Local version for ubuntu.
 
 ### Process in the Pipeline
 
@@ -55,11 +47,11 @@ These prerequisites are essential for setting up and running the VN-Stock Market
 
 #### Configuration
 
-- **Owner:** Duong
-- **Start Date:** August 28, 2023
-- **Number of Retries:** 3 times
-- **Alert of failure** Email
-- **Interval between Retries:** 5 minutes
+- **Owner:** Duong.
+- **Start Date:** August 28, 2023.
+- **Number of Retries:** 3 times.
+- **Alert of failure:** Email.
+- **Interval between Retries:** 5 minutes.
 
 This pipeline consists of several DAGs (Direct Acyclic Graphs) that are scheduled to run at different intevals for data collection, processing, and alerting.
 
@@ -67,8 +59,10 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 ![vnstock-pipeline-1D](image/vnstock-pipeline-1D.png)
 
-- **Scheduler:** Daily at 4PM
+- **Scheduler:** Daily at 4PM.
+
 - **Tasks:** Daily stock data is collected from `vnstock` and processed at hourly intervals, after which the processed data is sent to Google Cloud Storage. Furthermore, email alerts are triggered to notify successful execution of these tasks.
+
 - **Data Format:** `['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']`
 **This command:** `stock_data=stock_historical_data (symbol=stock, start_date=current_date, end_date=current_date, resolution=resolution, type='stock')`
     
@@ -76,7 +70,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 ![Alt text](image/Stock_pipeline-3M-1Y.png)
 
-- **Scheduler:** Daily at 8PM
+- **Scheduler:** Daily at 8PM.
 
 - **Task:** The system gathers a year's worth of data and stores in Google Cloud Storage. Use Spark to process data from Google Cloud Storage, then compute the most consistency growing stock codes over three-month period, where stability is defined by an average index increase within a 10% amplitude range. The results are then sent to Bigquery for advanced analysis.
 
@@ -87,7 +81,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 ![Alt text](image/vnstock-pipeline-1H.png)
 
-- **Scheduler:** Between 8AM - 4PM
+- **Scheduler:** Between 8AM - 4PM.
 
 - **Task:** Users is possible to select their preferred stock codes for monitoring. This module continually updates the stock indices every hour during trading hours and publishes them to Cloud Pub/Sub. Upon new data being published on Cloud Pub/Sub, it triggers the system to read and incorporate the fresh information into Bigquery for seamless integration of real-time data updates.
 
@@ -106,7 +100,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 ![Alt text](image/vnstock-pipeline-1M.png)
 
-- **Scheduler:** Between 8AM - 4PM with every 5 minutes
+- **Scheduler:** Between 8AM - 4PM with every 5 minutes.
 
 - **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
 
@@ -117,7 +111,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 5. **Visualization:**
 
-- **Scheduler:** Hourly
+- **Scheduler:** Hourly.
 
 - **Task:** In Data Studio, set up line charts that display real-time hourly updates for the stock codes you've subscribed to. Additionally, create line charts that visualize the stable-growing stock codes over a three-month period for insightful analysis.
 
