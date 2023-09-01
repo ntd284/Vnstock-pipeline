@@ -15,17 +15,17 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 1. **Apache Airflow Installation:** Make sure you have `Apache Airflow` correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
 
 
-2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/)
+2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/).
 
 3. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as following:
 
-    - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment. Refer to the [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances)
+    - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment. Refer to the [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances).
 
-    - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data. Refer to the [Cloud Storage documentation](https://cloud.google.com/storage/docs)
+    - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data. Refer to the [Cloud Storage documentation](https://cloud.google.com/storage/docs).
 
-    - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs)
+    - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs).
 
-    - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
+    - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs).
 
     - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery Table` when new data arrives in `Google Cloud Storage` and is published on `Cloud Pub/Sub`. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
 
@@ -33,7 +33,7 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
 4. **Telegram Bot:** To receive `Telegram` notifications when subscribed stock codes drop by 10% below the expected price, you'll need to install and use the [pyTelegramBotAPI library](https://github.com/eternnoir/pyTelegramBotAPI).
 
-5. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks. Refer to the [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html)
+5. **Dataproc:** Configure `Dataproc` and set up `Spark` to read data from `Cloud Storage` and perform data processing tasks. Refer to the [Dataproc documentation](https://spark.apache.org/docs/latest/sql-getting-started.html).
 
 These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
 
