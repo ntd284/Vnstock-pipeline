@@ -12,28 +12,28 @@ Follow the steps below to setup and run this ETL pipeline.
 
 Before setting up and running this ETL pipeline, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation:** Make sure you have Apache Airflow correctly installed on your virtual machine.[Airflow apache setup](https://github.com/apache/airflow).
+1. **Apache Airflow Installation:** Make sure you have Apache Airflow correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
 
 
-2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures.[SMTP config](https://airflow.apache.org/docs/apache-airflow/stable/howto/email-config.html)
+2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [SMTP config](https://airflow.apache.org/docs/apache-airflow/stable/howto/email-config.html)
 
 3. **Google Cloud Services Setup:** Create and configure the necessary Google Cloud resources as follows:
 
-    - **Virtual Machine (VM):** Provision a virtual machine instance on Google Cloud to serve as your data processing environment.[Virtual machine instances guide](https://cloud.google.com/compute/docs/instances)
+    - **Virtual Machine (VM):** Provision a virtual machine instance on Google Cloud to serve as your data processing environment. Refer to the [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances)
 
-    - **Google Cloud Storage (GCS):** Set up GCS and create the required buckets to store your data.[Cloud Storage documentation](https://cloud.google.com/storage/docs)
+    - **Google Cloud Storage (GCS):** Set up GCS and create the required buckets to store your data. Refer to the [Cloud Storage documentation](https://cloud.google.com/storage/docs)
 
-    - **Google BigQuery:** Create and configure a BigQuery dataset that will serve as your data warehouse.[BigQuery documentation](https://cloud.google.com/bigquery/docs)
+    - **Google BigQuery:** Create and configure a BigQuery dataset that will serve as your data warehouse. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs)
 
-    - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine.[Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
+    - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
 
-    - **Cloud Function:** Create Cloud Functions to trigger updates to BigQuery when new data arrives in GCS and is published on Cloud Pub/Sub [Cloud Functions documentation](https://cloud.google.com/functions/docs).
+    - **Cloud Function:** Create Cloud Functions to trigger updates to BigQuery when new data arrives in GCS and is published on Cloud Pub/Sub. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
 
-    - **Data Studio:** Prepare Data Studio for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis [Looker Studio](https://developers.google.com/looker-studio).
+    - **Data Studio:** Prepare Data Studio for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. Refer to the [Looker Studio](https://developers.google.com/looker-studio).
 
 4. **Telegram Bot:** To receive Telegram notifications when subscribed stock codes drop by 10% below the expected price, you'll need to install and use the [pyTelegramBotAPI library](https://github.com/eternnoir/pyTelegramBotAPI).
 
-5. **Dataproc:** Configure Dataproc and set up Spark to read data from Cloud Storage and perform data processing tasks.[Spark SQL Guide](https://spark.apache.org/docs/latest/sql-getting-started.html)
+5. **Dataproc:** Configure Dataproc and set up Spark to read data from Cloud Storage and perform data processing tasks. Refer to the [Spark SQL Guide](https://spark.apache.org/docs/latest/sql-getting-started.html)
 
 
 These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
