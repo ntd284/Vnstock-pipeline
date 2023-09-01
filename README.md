@@ -25,7 +25,7 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
     - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs)
 
-    - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
+    - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
 
     - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery` when new data arrives in `Google Cloud Storage` and is published on Cloud Pub/Sub. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
 
