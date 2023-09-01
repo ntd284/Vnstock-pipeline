@@ -93,7 +93,8 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 **Bigquery:** received and presented data.
 
-![Alt text](image/Bigquery_result_1H.png)
+![Alt text]()
+![Alt text](image/Bigquery_result_1H_.png)
 
 - **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`.
 
