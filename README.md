@@ -63,7 +63,8 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 - **Tasks:** Daily stock data is collected from `vnstock` and processed at hourly intervals, after which the processed data is sent to `Google Cloud Storage`. Furthermore, `email alerts` are triggered to notify successful execution of these tasks.
 
-- **Data Format:** `['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']`
+- **Data Format:** `['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']`.
+
 **This command:** `stock_data=stock_historical_data (symbol=stock, start_date=current_date, end_date=current_date, resolution=resolution, type='stock')`
     
 2. **Stock_pipeline-3M-1Y:** [collect_gcs.py](./src/pluggin/collect_gcs.py)
@@ -74,7 +75,8 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 - **Task:** The system gathers a year's worth of data and stores in `Google Cloud Storage`. Use Spark to process data from `Google Cloud Storage`, then compute the most consistency growing stock codes over three-month period, where stability is defined by an average index increase within a 10% amplitude range. The results are then sent to `Bigquery` for advanced analysis.
 
-- **Data Format:** `['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']`
+- **Data Format:** `['time', 'open', 'high', 'low', 'close', 'volume', 'ticker', 'type']`.
+
 **This command:** `stock_data=stock_historical_data (symbol=stock, start_date=start_date, end_date=current_date, resolution=resolution, type='stock')` with `start_date` is one year before.
 
 3. **vnstock-pipeline-1H:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
@@ -93,8 +95,9 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 ![Alt text](image/Bigquery_result_1H.png)
 
-- **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`
-**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
+- **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`.
+
+**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`.
 
 4. **vnstock-pipeline-1M:** [stock_subscription.py](./src/pluggin/stock_subscription.py)
 
@@ -106,8 +109,9 @@ This pipeline consists of several `DAGs` (Direct Acyclic Graphs) that are schedu
 
 ![Alt text](image/telegram1.png)
 
-- **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`
-**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
+- **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`.
+
+**This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`.
 
 5. **Visualization:**
 
