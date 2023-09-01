@@ -1,6 +1,6 @@
 # Building a Comprehensive Data Pipeline for VN-Stock Market Analysis
 
-This repository contains code for building a pipeline using Apache Airflow. The pipeline extracts data from vnstock (stock API of TCBS and SSI), transform it, and loads it into a datawarehouse and datamart for business analytic.
+This repository contains code for building a pipeline using Apache Airflow. The pipeline extracts data from vnstock (stock API of TCBS and SSI), transform it, and loads it into a datawarehouse and datamart for business analysis.
 
 ![Alt text](image/DEC-final_project.drawio.png)
 
@@ -10,28 +10,28 @@ Follow the steps below to setup and run this ETL pipeline.
 
 ### Prerequisites
 
-- Apache Airflow Installation: Apache Airflow is properly installed on virtual machine.
-- Email: Send error notifications for any failure in Airflow.
-- Google Cloud Services Setup: Create and set up the necessary Google Cloud resources:
-    - Virtual Machine (VM): Provision a virtual machine instance on Google Cloud.
-    - Google Cloud Storage (GCS): Create the required buckets for storing your data.
-    - Google BigQuery: Set up and configure a BigQuery dataset to serve as your data warehouse.
-    - Cloud Pubsub: Record subscribed stock codes and publish them from Compute Engine.
-    - Dataproc: Set up Spark to read data from Cloud storage and compute data.
-    - Cloud Function: Trigger updates to Bigquery when new data arrives in GCS and is published on Cloud Pub/Sub.
-    - Data Studio: Display charts for monitoring subscribed stock codes hourly and data in 3 months for analytic.
-- Telegram bot: Send message when subcribed stock codes drop 10% below expected price.
+- **Apache Airflow Installation:** Apache Airflow is properly installed on virtual machine.
+- **Email:** Send error notifications for any failure in Airflow.
+- **Google Cloud Services Setup:** Create and set up the necessary Google Cloud resources:
+    - **Virtual Machine (VM):** Provision a virtual machine instance on Google Cloud.
+    - **Google Cloud Storage (GCS):** Create the required buckets for storing your data.
+    - **Google BigQuery:** Set up and configure a BigQuery dataset to serve as your data warehouse.
+    - **Cloud Pubsub:** Record subscribed stock codes and publish them from Compute Engine.
+    - **Dataproc:** Set up Spark to read data from Cloud storage and compute data.
+    - **Cloud Function:** Trigger updates to Bigquery when new data arrives in GCS and is published on Cloud Pub/Sub.
+    - **Data Studio:** Display charts for monitoring subscribed stock codes hourly and data in 3 months for analysis.
+- **Telegram bot:** Send message when subcribed stock codes drop 10% below expected price.
 
 ### Installation and Configuration
 
-- Virtual Machine (VM): Ensure that you have a virtual machine instance set up with the OS Ubuntu 20.04 and environment for running Airflow tasks.
-- Google Cloud Services: Install and initialize services on google cloud website.
-- Telegram bot: Install and use library on `https://github.com/eternnoir/pyTelegramBotAPI`
-- Airflow apache: use Local version for ubuntu.
+- **Virtual Machine (VM):** Ensure that you have a virtual machine instance set up with the OS Ubuntu 20.04 and environment for running Airflow tasks.
+- **Google Cloud Services:** Install and initialize services on google cloud website.
+- **Telegram bot:** Install and use library on `https://github.com/eternnoir/pyTelegramBotAPI`
+- **Airflow apache:** use Local version for ubuntu.
 
 ### Process in the Pipeline
 
-Main DAGs:
+**Main DAGs:**
 
 [Main.py](./src/dags/main.py)
 
