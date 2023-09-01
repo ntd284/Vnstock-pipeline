@@ -1,6 +1,6 @@
 # Building a Comprehensive Data Pipeline for VN-Stock Market Analysis
 
-This repository contains code for building a pipeline using Apache Airflow. The pipeline extracts data from vnstock (stock API of TCBS and SSI), transform it, and loads it into a datawarehouse and datamart for business analysis.
+This project contains process for building a pipeline using Apache Airflow. The pipeline extracts data from vnstock (stock API of TCBS and SSI), transform it, and loads it into a datawarehouse and datamart for business analysis.
 
 ![Alt text](image/DEC-final_project.drawio.png)
 
@@ -94,7 +94,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 - **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
 
-![Alt text](telegram.png)
+![Alt text](image/telegram.png)
 
 - **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`
 **This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
