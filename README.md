@@ -27,9 +27,9 @@ Before setting up and running this ETL pipeline, please ensure you have the foll
 
     - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine.[Pub/Sub documentation][https://cloud.google.com/pubsub/docs]
 
-    - **Cloud Function:** Create Cloud Functions to trigger updates to BigQuery when new data arrives in GCS and is published on Cloud Pub/Sub.[Cloud Functions documentation][https://cloud.google.com/functions/docs]
+    - **Cloud Function:** Create Cloud Functions to trigger updates to BigQuery when new data arrives in GCS and is published on Cloud Pub/Sub.[Cloud Functions documentation][https://cloud.google.com/functions/docs].
 
-    - **Data Studio:** Prepare Data Studio for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. [Looker Studio][https://developers.google.com/looker-studio]
+    - **Data Studio:** Prepare Data Studio for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. [Looker Studio][https://developers.google.com/looker-studio].
 
 4. **Telegram Bot:** To receive Telegram notifications when subscribed stock codes drop by 10% below the expected price, you'll need to install and use the [pyTelegramBotAPI library](https://github.com/eternnoir/pyTelegramBotAPI).
 
