@@ -1,6 +1,6 @@
 # Building a Comprehensive Data Pipeline for VN-Stock Market Analysis
 
-This project contains process for building a pipeline using `Apache Airflow`. The pipeline extracts data from `vnstock` (stock API of TCBS and SSI), transform it, and loads it into a `datawarehouse` and `datamart` for business analysis.
+This project contains process for building a pipeline using `Apache Airflow`. The pipeline extracts data from `vnstock` (stock API of TCBS and SSI), transform it, and loads it into a `data warehouse` and `datamart` for business analysis.
 
 ![Alt text](image/DEC-final_project.drawio.png)
 
@@ -12,12 +12,12 @@ Follow the steps below to setup and run this ETL pipeline.
 
 Before setting up and running this `ETL pipeline`, please ensure you have the following prerequisites in place:
 
-1. **Apache Airflow Installation:** Make sure you have `Apache Airflow`correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
+1. **Apache Airflow Installation:** Make sure you have `Apache Airflow` correctly installed on your virtual machine. Refer to the [Airflow apache setup](https://github.com/apache/airflow).
 
 
 2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures. Refer to the [Sending Emails using Airflow EmailOperator](https://hevodata.com/learn/airflow-emailoperator/)
 
-3. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as follows:
+3. **Google Cloud Services Setup:** Create and configure the necessary `Google Cloud Service` resources as following:
 
     - **Virtual Machine (VM):** Provision a `virtual machine` instance on `Google Cloud Serice` to serve as your data processing environment. Refer to the [Virtual machine instances guide](https://cloud.google.com/compute/docs/instances)
 
