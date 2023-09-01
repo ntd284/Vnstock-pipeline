@@ -10,17 +10,33 @@ Follow the steps below to setup and run this ETL pipeline.
 
 ### Prerequisites
 
-- **Apache Airflow Installation:** Apache Airflow is properly installed on virtual machine.
-- **Email:** Send error notifications for any failure in Airflow.
-- **Google Cloud Services Setup:** Create and set up the necessary Google Cloud resources:
-    - **Virtual Machine (VM):** Provision a virtual machine instance on Google Cloud.
-    - **Google Cloud Storage (GCS):** Create the required buckets for storing your data.
-    - **Google BigQuery:** Set up and configure a BigQuery dataset to serve as your data warehouse.
-    - **Cloud Pubsub:** Record subscribed stock codes and publish them from Compute Engine.
-    - **Dataproc:** Set up Spark to read data from Cloud storage and compute data.
-    - **Cloud Function:** Trigger updates to Bigquery when new data arrives in GCS and is published on Cloud Pub/Sub.
-    - **Data Studio:** Display charts for monitoring subscribed stock codes hourly and data in 3 months for analysis.
-- **Telegram bot:** Send message when subcribed stock codes drop 10% below expected price.
+Before setting up and running this ETL pipeline, please ensure you have the following prerequisites in place:
+
+1. **Apache Airflow Installation:** Make sure you have Apache Airflow correctly installed on your virtual machine.[Airflow apache setup](https://github.com/apache/airflow).
+
+
+2. **Email:** Configure your email settings to receive error notifications in case of any pipeline failures.[SMTP config][https://airflow.apache.org/docs/apache-airflow/stable/howto/email-config.html]
+
+3. **Google Cloud Services Setup:** Create and configure the necessary Google Cloud resources as follows:
+
+    - **Virtual Machine (VM):** Provision a virtual machine instance on Google Cloud to serve as your data processing environment.[Virtual machine instances guide][https://cloud.google.com/compute/docs/instances]
+
+    - **Google Cloud Storage (GCS):** Set up GCS and create the required buckets to store your data.[Cloud Storage documentation][https://cloud.google.com/storage/docs]
+
+    - **Google BigQuery:** Create and configure a BigQuery dataset that will serve as your data warehouse.[BigQuery documentation][https://cloud.google.com/bigquery/docs]
+
+    - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine.[Pub/Sub documentation][https://cloud.google.com/pubsub/docs]
+
+    - **Cloud Function:** Create Cloud Functions to trigger updates to BigQuery when new data arrives in GCS and is published on Cloud Pub/Sub.[Cloud Functions documentation][https://cloud.google.com/functions/docs]
+
+    - **Data Studio:** Prepare Data Studio for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. [Looker Studio][https://developers.google.com/looker-studio]
+
+4. **Telegram Bot:** To receive Telegram notifications when subscribed stock codes drop by 10% below the expected price, you'll need to install and use the [pyTelegramBotAPI library](https://github.com/eternnoir/pyTelegramBotAPI).
+
+5. **Dataproc:** Configure Dataproc and set up Spark to read data from Cloud Storage and perform data processing tasks.[Spark SQL Guide][https://spark.apache.org/docs/latest/sql-getting-started.html]
+
+
+These prerequisites are essential for setting up and running the VN-Stock Market Analysis data pipeline. Once you have these in place, you can proceed with the installation and configuration steps below.
 
 ### Installation and Configuration
 
@@ -94,7 +110,7 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 - **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
 
-![Alt text](image/telegram.png)
+![Alt text](image/telegram1.png)
 
 - **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`
 **This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
