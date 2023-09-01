@@ -27,7 +27,7 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
     - **Cloud Pubsub:** Set up `Cloud Pub/Sub` to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
 
-    - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery` when new data arrives in `Google Cloud Storage` and is published on Cloud Pub/Sub. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
+    - **Cloud Function:** Create `Cloud Functions` to trigger updates to `BigQuery Table` when new data arrives in `Google Cloud Storage` and is published on `Cloud Pub/Sub`. Refer to the [Cloud Functions documentation](https://cloud.google.com/functions/docs).
 
     - **Data Studio:** Prepare `Data Studio` for displaying charts to monitor subscribed stock codes hourly and data for the last 3 months for analysis. Refer to the [Looker Studio](https://developers.google.com/looker-studio).
 
