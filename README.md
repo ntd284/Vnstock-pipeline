@@ -94,14 +94,14 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 - **Task:** Send Telegram notifications whenever a subscribed stock code experiences a 10% decrease in value compared to your expected price.
 
-![Alt text](image/telegram.png)
+![Alt text](telegram.png)
 
 - **Data Format:** `['Datetime', 'Ticker', 'Reference', 'Ceiling', 'Floor', 'Mached', 'Volume']`
 **This command:** `sum_stock = price_depth(stock_list='ACB,TCB,FPT,FOX')`
 
 5. **Visualization:**
 
-- **Scheduler:** Hourly 
+- **Scheduler:** Hourly
 
 - **Task:** In Data Studio, set up line charts that display real-time hourly updates for the stock codes you've subscribed to. Additionally, create line charts that visualize the stable-growing stock codes over a three-month period for insightful analysis.
 
