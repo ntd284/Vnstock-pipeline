@@ -23,7 +23,7 @@ Before setting up and running this `ETL pipeline`, please ensure you have the fo
 
     - **Google Cloud Storage (GCS):** Set up `Google Cloud Storage` and create the required `buckets` to store your data. Refer to the [Cloud Storage documentation](https://cloud.google.com/storage/docs)
 
-    - **Google BigQuery:** Create and configure a BigQuery dataset that will serve as your data warehouse. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs)
+    - **Google BigQuery:** Create and configure a `BigQuery dataset` that will serve as your `data warehouse`. Refer to the [BigQuery documentation](https://cloud.google.com/bigquery/docs)
 
     - **Cloud Pubsub:** Set up Cloud Pub/Sub to record subscribed stock codes and publish them from the Compute Engine. Refer to the [Cloud Pub/Sub documentation](https://cloud.google.com/pubsub/docs)
 
