@@ -2,3 +2,5 @@
 /logs
 airflow.cfg
 webserver_config.py
+airflow-webserver.pid
+airflow.db

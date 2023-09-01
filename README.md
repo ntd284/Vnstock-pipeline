@@ -75,11 +75,11 @@ This pipeline consists of several DAGs (Direct Acyclic Graphs) that are schedule
 
 - **Task:** Users is possible to select their preferred stock codes for monitoring. This module continually updates the stock indices every hour during trading hours and publishes them to Cloud Pub/Sub. Upon new data being published on Cloud Pub/Sub, it triggers the system to read and incorporate the fresh information into Bigquery for seamless integration of real-time data updates.
 
-Cloud function log: trigger from pubsub sucessfully
+**Cloud function log:** check and trigger when pubsub received sucessfully data from vm.
 
 ![Alt text](image/Cloud-function-log.png)
 
-Bigquery received and presented data
+**Bigquery:** received and presented data.
 
 ![Alt text](image/Bigquery_result_1H.png)
 
