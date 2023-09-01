@@ -48,7 +48,7 @@ These prerequisites are essential for setting up and running the VN-Stock Market
 #### Configuration
 
 - **Owner:** Duong.
-- **Start Date:** August 28, 2023.
+- **Start Date:** August 31, 2023.
 - **Number of Retries:** 3 times.
 - **Alert of failure:** Email.
 - **Interval between Retries:** 5 minutes.
